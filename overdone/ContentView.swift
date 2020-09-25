@@ -22,7 +22,7 @@ struct ContentView: View {
         NavigationView {
             List {
                 ForEach(entries) { entry in
-                    Text("\(entry.text!) is due \(entry.dueDate!)")
+                    Text("\(entry.text!)")
                 }
                 .onDelete(perform: deleteEntry)
             }
