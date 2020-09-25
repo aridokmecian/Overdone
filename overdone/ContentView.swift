@@ -19,36 +19,36 @@ struct ContentView: View {
     @State private var showSheet = false
     
     var body: some View {
-        VStack{
-            NavigationView {
-                List {
-                    ForEach(entries) { entry in
-                        Text("\(entry.text!) is due \(entry.dueDate!)")
-                    }
-                    .onDelete(perform: deleteEntry)
+        NavigationView {
+            List {
+                ForEach(entries) { entry in
+                    Text("\(entry.text!) is due \(entry.dueDate!)")
                 }
-                .listStyle(InsetGroupedListStyle())
-                .navigationTitle("Over Done")
-                .toolbar {
-                    ToolbarItem(placement: .navigationBarLeading) {
-                        EditButton()
-                    }
-                    
-                    ToolbarItem(placement: .navigationBarTrailing) {
-                        Button(action: {
-                                self.showSheet.toggle()
-                            
-                        }) {
-                            Label("Add Item", systemImage: "plus")
-                        }
-                        .sheet(isPresented: $showSheet) {
-                            newTodoPage(showSheet: $showSheet)
-                        }
+                .onDelete(perform: deleteEntry)
+            }
+            .listStyle(InsetGroupedListStyle())
+            .navigationTitle("Over Done")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    EditButton()
+                }
+                
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: {
+                        self.showSheet = true
+                        
+                    }) {
+                        Label("Add Item", systemImage: "plus")
                     }
                 }
             }
         }
+        .sheet(isPresented: $showSheet) {
+            newTodoPage()
+                .environment(\.managedObjectContext, self.viewContext)
+        }
     }
+    
 
     
     private func deleteEntry(offsets: IndexSet) {
