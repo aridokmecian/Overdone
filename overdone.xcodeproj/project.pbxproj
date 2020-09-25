@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		773A0AA0251C436700C05ED1 /* twodoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773A0A9F251C436700C05ED1 /* twodoApp.swift */; };
+		773A0AA0251C436700C05ED1 /* overDoneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773A0A9F251C436700C05ED1 /* overDoneApp.swift */; };
 		773A0AA2251C436700C05ED1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773A0AA1251C436700C05ED1 /* ContentView.swift */; };
 		773A0AA4251C436800C05ED1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 773A0AA3251C436800C05ED1 /* Assets.xcassets */; };
 		773A0AA7251C436800C05ED1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 773A0AA6251C436800C05ED1 /* Preview Assets.xcassets */; };
 		773A0AA9251C436800C05ED1 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773A0AA8251C436800C05ED1 /* Persistence.swift */; };
-		773A0AAC251C436800C05ED1 /* twodo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 773A0AAA251C436800C05ED1 /* twodo.xcdatamodeld */; };
-		773A0AB7251C436900C05ED1 /* twodoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773A0AB6251C436900C05ED1 /* twodoTests.swift */; };
-		773A0AC2251C436900C05ED1 /* twodoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773A0AC1251C436900C05ED1 /* twodoUITests.swift */; };
+		773A0AB7251C436900C05ED1 /* overdoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773A0AB6251C436900C05ED1 /* overdoneTests.swift */; };
+		773A0AC2251C436900C05ED1 /* overdoneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773A0AC1251C436900C05ED1 /* overdoneUITests.swift */; };
+		77552EED251D848900C3F46F /* newTodoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77552EEC251D848900C3F46F /* newTodoPage.swift */; };
+		77AD9012251D8F0C0028A26A /* overdoneModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 77AD9010251D8F0C0028A26A /* overdoneModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,20 +36,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		773A0A9C251C436700C05ED1 /* twodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = twodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		773A0A9F251C436700C05ED1 /* twodoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = twodoApp.swift; sourceTree = "<group>"; };
+		773A0A9C251C436700C05ED1 /* overdone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = overdone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		773A0A9F251C436700C05ED1 /* overDoneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = overDoneApp.swift; sourceTree = "<group>"; };
 		773A0AA1251C436700C05ED1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		773A0AA3251C436800C05ED1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		773A0AA6251C436800C05ED1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		773A0AA8251C436800C05ED1 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		773A0AAB251C436800C05ED1 /* twodo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = twodo.xcdatamodel; sourceTree = "<group>"; };
 		773A0AAD251C436800C05ED1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		773A0AB2251C436900C05ED1 /* twodoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = twodoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		773A0AB6251C436900C05ED1 /* twodoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = twodoTests.swift; sourceTree = "<group>"; };
+		773A0AB2251C436900C05ED1 /* overdoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = overdoneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		773A0AB6251C436900C05ED1 /* overdoneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = overdoneTests.swift; sourceTree = "<group>"; };
 		773A0AB8251C436900C05ED1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		773A0ABD251C436900C05ED1 /* twodoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = twodoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		773A0AC1251C436900C05ED1 /* twodoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = twodoUITests.swift; sourceTree = "<group>"; };
+		773A0ABD251C436900C05ED1 /* overdoneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = overdoneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		773A0AC1251C436900C05ED1 /* overdoneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = overdoneUITests.swift; sourceTree = "<group>"; };
 		773A0AC3251C436900C05ED1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77552EEC251D848900C3F46F /* newTodoPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newTodoPage.swift; sourceTree = "<group>"; };
+		77AD9011251D8F0C0028A26A /* overdoneModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = overdoneModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +81,9 @@
 		773A0A93251C436700C05ED1 = {
 			isa = PBXGroup;
 			children = (
-				773A0A9E251C436700C05ED1 /* twodo */,
-				773A0AB5251C436900C05ED1 /* twodoTests */,
-				773A0AC0251C436900C05ED1 /* twodoUITests */,
+				773A0A9E251C436700C05ED1 /* overdone */,
+				773A0AB5251C436900C05ED1 /* overdoneTests */,
+				773A0AC0251C436900C05ED1 /* overdoneUITests */,
 				773A0A9D251C436700C05ED1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,25 +91,26 @@
 		773A0A9D251C436700C05ED1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				773A0A9C251C436700C05ED1 /* twodo.app */,
-				773A0AB2251C436900C05ED1 /* twodoTests.xctest */,
-				773A0ABD251C436900C05ED1 /* twodoUITests.xctest */,
+				773A0A9C251C436700C05ED1 /* overdone.app */,
+				773A0AB2251C436900C05ED1 /* overdoneTests.xctest */,
+				773A0ABD251C436900C05ED1 /* overdoneUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		773A0A9E251C436700C05ED1 /* twodo */ = {
+		773A0A9E251C436700C05ED1 /* overdone */ = {
 			isa = PBXGroup;
 			children = (
-				773A0A9F251C436700C05ED1 /* twodoApp.swift */,
+				773A0A9F251C436700C05ED1 /* overDoneApp.swift */,
 				773A0AA1251C436700C05ED1 /* ContentView.swift */,
 				773A0AA3251C436800C05ED1 /* Assets.xcassets */,
 				773A0AA8251C436800C05ED1 /* Persistence.swift */,
+				77AD9010251D8F0C0028A26A /* overdoneModel.xcdatamodeld */,
+				77552EEC251D848900C3F46F /* newTodoPage.swift */,
 				773A0AAD251C436800C05ED1 /* Info.plist */,
-				773A0AAA251C436800C05ED1 /* twodo.xcdatamodeld */,
 				773A0AA5251C436800C05ED1 /* Preview Content */,
 			);
-			path = twodo;
+			path = overdone;
 			sourceTree = "<group>";
 		};
 		773A0AA5251C436800C05ED1 /* Preview Content */ = {
@@ -118,30 +121,30 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		773A0AB5251C436900C05ED1 /* twodoTests */ = {
+		773A0AB5251C436900C05ED1 /* overdoneTests */ = {
 			isa = PBXGroup;
 			children = (
-				773A0AB6251C436900C05ED1 /* twodoTests.swift */,
+				773A0AB6251C436900C05ED1 /* overdoneTests.swift */,
 				773A0AB8251C436900C05ED1 /* Info.plist */,
 			);
-			path = twodoTests;
+			path = overdoneTests;
 			sourceTree = "<group>";
 		};
-		773A0AC0251C436900C05ED1 /* twodoUITests */ = {
+		773A0AC0251C436900C05ED1 /* overdoneUITests */ = {
 			isa = PBXGroup;
 			children = (
-				773A0AC1251C436900C05ED1 /* twodoUITests.swift */,
+				773A0AC1251C436900C05ED1 /* overdoneUITests.swift */,
 				773A0AC3251C436900C05ED1 /* Info.plist */,
 			);
-			path = twodoUITests;
+			path = overdoneUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		773A0A9B251C436700C05ED1 /* twodo */ = {
+		773A0A9B251C436700C05ED1 /* overdone */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 773A0AC6251C436900C05ED1 /* Build configuration list for PBXNativeTarget "twodo" */;
+			buildConfigurationList = 773A0AC6251C436900C05ED1 /* Build configuration list for PBXNativeTarget "overdone" */;
 			buildPhases = (
 				773A0A98251C436700C05ED1 /* Sources */,
 				773A0A99251C436700C05ED1 /* Frameworks */,
@@ -151,14 +154,14 @@
 			);
 			dependencies = (
 			);
-			name = twodo;
+			name = overdone;
 			productName = twodo;
-			productReference = 773A0A9C251C436700C05ED1 /* twodo.app */;
+			productReference = 773A0A9C251C436700C05ED1 /* overdone.app */;
 			productType = "com.apple.product-type.application";
 		};
-		773A0AB1251C436900C05ED1 /* twodoTests */ = {
+		773A0AB1251C436900C05ED1 /* overdoneTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 773A0AC9251C436900C05ED1 /* Build configuration list for PBXNativeTarget "twodoTests" */;
+			buildConfigurationList = 773A0AC9251C436900C05ED1 /* Build configuration list for PBXNativeTarget "overdoneTests" */;
 			buildPhases = (
 				773A0AAE251C436900C05ED1 /* Sources */,
 				773A0AAF251C436900C05ED1 /* Frameworks */,
@@ -169,14 +172,14 @@
 			dependencies = (
 				773A0AB4251C436900C05ED1 /* PBXTargetDependency */,
 			);
-			name = twodoTests;
+			name = overdoneTests;
 			productName = twodoTests;
-			productReference = 773A0AB2251C436900C05ED1 /* twodoTests.xctest */;
+			productReference = 773A0AB2251C436900C05ED1 /* overdoneTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		773A0ABC251C436900C05ED1 /* twodoUITests */ = {
+		773A0ABC251C436900C05ED1 /* overdoneUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 773A0ACC251C436900C05ED1 /* Build configuration list for PBXNativeTarget "twodoUITests" */;
+			buildConfigurationList = 773A0ACC251C436900C05ED1 /* Build configuration list for PBXNativeTarget "overdoneUITests" */;
 			buildPhases = (
 				773A0AB9251C436900C05ED1 /* Sources */,
 				773A0ABA251C436900C05ED1 /* Frameworks */,
@@ -187,9 +190,9 @@
 			dependencies = (
 				773A0ABF251C436900C05ED1 /* PBXTargetDependency */,
 			);
-			name = twodoUITests;
+			name = overdoneUITests;
 			productName = twodoUITests;
-			productReference = 773A0ABD251C436900C05ED1 /* twodoUITests.xctest */;
+			productReference = 773A0ABD251C436900C05ED1 /* overdoneUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -214,7 +217,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 773A0A97251C436700C05ED1 /* Build configuration list for PBXProject "twodo" */;
+			buildConfigurationList = 773A0A97251C436700C05ED1 /* Build configuration list for PBXProject "overdone" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -227,9 +230,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				773A0A9B251C436700C05ED1 /* twodo */,
-				773A0AB1251C436900C05ED1 /* twodoTests */,
-				773A0ABC251C436900C05ED1 /* twodoUITests */,
+				773A0A9B251C436700C05ED1 /* overdone */,
+				773A0AB1251C436900C05ED1 /* overdoneTests */,
+				773A0ABC251C436900C05ED1 /* overdoneUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -267,8 +270,9 @@
 			files = (
 				773A0AA9251C436800C05ED1 /* Persistence.swift in Sources */,
 				773A0AA2251C436700C05ED1 /* ContentView.swift in Sources */,
-				773A0AA0251C436700C05ED1 /* twodoApp.swift in Sources */,
-				773A0AAC251C436800C05ED1 /* twodo.xcdatamodeld in Sources */,
+				77AD9012251D8F0C0028A26A /* overdoneModel.xcdatamodeld in Sources */,
+				77552EED251D848900C3F46F /* newTodoPage.swift in Sources */,
+				773A0AA0251C436700C05ED1 /* overDoneApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				773A0AB7251C436900C05ED1 /* twodoTests.swift in Sources */,
+				773A0AB7251C436900C05ED1 /* overdoneTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				773A0AC2251C436900C05ED1 /* twodoUITests.swift in Sources */,
+				773A0AC2251C436900C05ED1 /* overdoneUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,12 +297,12 @@
 /* Begin PBXTargetDependency section */
 		773A0AB4251C436900C05ED1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 773A0A9B251C436700C05ED1 /* twodo */;
+			target = 773A0A9B251C436700C05ED1 /* overdone */;
 			targetProxy = 773A0AB3251C436900C05ED1 /* PBXContainerItemProxy */;
 		};
 		773A0ABF251C436900C05ED1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 773A0A9B251C436700C05ED1 /* twodo */;
+			target = 773A0A9B251C436700C05ED1 /* overdone */;
 			targetProxy = 773A0ABE251C436900C05ED1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -426,16 +430,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"twodo/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"overdone/Preview Content\"";
 				DEVELOPMENT_TEAM = X2JKSF7P44;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = twodo/Info.plist;
+				INFOPLIST_FILE = overdone/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.aridokmecian.twodo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aridokmecian.overdone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -448,16 +452,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"twodo/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"overdone/Preview Content\"";
 				DEVELOPMENT_TEAM = X2JKSF7P44;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = twodo/Info.plist;
+				INFOPLIST_FILE = overdone/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.aridokmecian.twodo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aridokmecian.overdone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -471,18 +475,18 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X2JKSF7P44;
-				INFOPLIST_FILE = twodoTests/Info.plist;
+				INFOPLIST_FILE = overdoneTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.aridokmecian.twodoTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aridokmecian.overdoneTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/twodo.app/twodo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/overdone.app/overdone";
 			};
 			name = Debug;
 		};
@@ -493,18 +497,18 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X2JKSF7P44;
-				INFOPLIST_FILE = twodoTests/Info.plist;
+				INFOPLIST_FILE = overdoneTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.aridokmecian.twodoTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aridokmecian.overdoneTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/twodo.app/twodo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/overdone.app/overdone";
 			};
 			name = Release;
 		};
@@ -514,17 +518,17 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X2JKSF7P44;
-				INFOPLIST_FILE = twodoUITests/Info.plist;
+				INFOPLIST_FILE = overdoneUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.aridokmecian.twodoUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aridokmecian.overdoneUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = twodo;
+				TEST_TARGET_NAME = overdone;
 			};
 			name = Debug;
 		};
@@ -534,24 +538,24 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X2JKSF7P44;
-				INFOPLIST_FILE = twodoUITests/Info.plist;
+				INFOPLIST_FILE = overdoneUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.aridokmecian.twodoUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aridokmecian.overdoneUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = twodo;
+				TEST_TARGET_NAME = overdone;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		773A0A97251C436700C05ED1 /* Build configuration list for PBXProject "twodo" */ = {
+		773A0A97251C436700C05ED1 /* Build configuration list for PBXProject "overdone" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				773A0AC4251C436900C05ED1 /* Debug */,
@@ -560,7 +564,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		773A0AC6251C436900C05ED1 /* Build configuration list for PBXNativeTarget "twodo" */ = {
+		773A0AC6251C436900C05ED1 /* Build configuration list for PBXNativeTarget "overdone" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				773A0AC7251C436900C05ED1 /* Debug */,
@@ -569,7 +573,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		773A0AC9251C436900C05ED1 /* Build configuration list for PBXNativeTarget "twodoTests" */ = {
+		773A0AC9251C436900C05ED1 /* Build configuration list for PBXNativeTarget "overdoneTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				773A0ACA251C436900C05ED1 /* Debug */,
@@ -578,7 +582,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		773A0ACC251C436900C05ED1 /* Build configuration list for PBXNativeTarget "twodoUITests" */ = {
+		773A0ACC251C436900C05ED1 /* Build configuration list for PBXNativeTarget "overdoneUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				773A0ACD251C436900C05ED1 /* Debug */,
@@ -590,13 +594,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		773A0AAA251C436800C05ED1 /* twodo.xcdatamodeld */ = {
+		77AD9010251D8F0C0028A26A /* overdoneModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				773A0AAB251C436800C05ED1 /* twodo.xcdatamodel */,
+				77AD9011251D8F0C0028A26A /* overdoneModel.xcdatamodel */,
 			);
-			currentVersion = 773A0AAB251C436800C05ED1 /* twodo.xcdatamodel */;
-			path = twodo.xcdatamodeld;
+			currentVersion = 77AD9011251D8F0C0028A26A /* overdoneModel.xcdatamodel */;
+			path = overdoneModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

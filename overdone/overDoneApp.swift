@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct twodoApp: App {
+struct overdoneApp: App {
     let persistenceController = PersistenceController.shared
 
     var body: some Scene {
