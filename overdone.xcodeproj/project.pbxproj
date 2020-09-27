@@ -14,10 +14,12 @@
 		773A0AA9251C436800C05ED1 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773A0AA8251C436800C05ED1 /* Persistence.swift */; };
 		773A0AB7251C436900C05ED1 /* overdoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773A0AB6251C436900C05ED1 /* overdoneTests.swift */; };
 		773A0AC2251C436900C05ED1 /* overdoneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773A0AC1251C436900C05ED1 /* overdoneUITests.swift */; };
-		77552EED251D848900C3F46F /* newTodoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77552EEC251D848900C3F46F /* newTodoPage.swift */; };
+		77552EED251D848900C3F46F /* NewTodoPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77552EEC251D848900C3F46F /* NewTodoPageView.swift */; };
 		7766815C25203D0E000454AD /* DrilldownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7766815B25203D0E000454AD /* DrilldownView.swift */; };
 		7766816925205267000454AD /* TodoEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7766816825205267000454AD /* TodoEntry.swift */; };
 		77AD9012251D8F0C0028A26A /* overdoneModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 77AD9010251D8F0C0028A26A /* overdoneModel.xcdatamodeld */; };
+		77F31CF425213179007801BB /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F31CF325213179007801BB /* EntryView.swift */; };
+		77F31D1B25214177007801BB /* DisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F31D1A25214177007801BB /* DisplayView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,10 +53,12 @@
 		773A0ABD251C436900C05ED1 /* overdoneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = overdoneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		773A0AC1251C436900C05ED1 /* overdoneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = overdoneUITests.swift; sourceTree = "<group>"; };
 		773A0AC3251C436900C05ED1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		77552EEC251D848900C3F46F /* newTodoPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newTodoPage.swift; sourceTree = "<group>"; };
+		77552EEC251D848900C3F46F /* NewTodoPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTodoPageView.swift; sourceTree = "<group>"; };
 		7766815B25203D0E000454AD /* DrilldownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrilldownView.swift; sourceTree = "<group>"; };
 		7766816825205267000454AD /* TodoEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoEntry.swift; sourceTree = "<group>"; };
 		77AD9011251D8F0C0028A26A /* overdoneModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = overdoneModel.xcdatamodel; sourceTree = "<group>"; };
+		77F31CF325213179007801BB /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
+		77F31D1A25214177007801BB /* DisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,14 +109,12 @@
 		773A0A9E251C436700C05ED1 /* overdone */ = {
 			isa = PBXGroup;
 			children = (
+				77F31D25252147CA007801BB /* Views */,
 				773A0A9F251C436700C05ED1 /* overDoneApp.swift */,
-				773A0AA1251C436700C05ED1 /* ContentView.swift */,
 				773A0AA3251C436800C05ED1 /* Assets.xcassets */,
 				773A0AA8251C436800C05ED1 /* Persistence.swift */,
 				77AD9010251D8F0C0028A26A /* overdoneModel.xcdatamodeld */,
-				77552EEC251D848900C3F46F /* newTodoPage.swift */,
 				7766816825205267000454AD /* TodoEntry.swift */,
-				7766815B25203D0E000454AD /* DrilldownView.swift */,
 				773A0AAD251C436800C05ED1 /* Info.plist */,
 				773A0AA5251C436800C05ED1 /* Preview Content */,
 			);
@@ -143,6 +145,18 @@
 				773A0AC3251C436900C05ED1 /* Info.plist */,
 			);
 			path = overdoneUITests;
+			sourceTree = "<group>";
+		};
+		77F31D25252147CA007801BB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				77552EEC251D848900C3F46F /* NewTodoPageView.swift */,
+				7766815B25203D0E000454AD /* DrilldownView.swift */,
+				77F31D1A25214177007801BB /* DisplayView.swift */,
+				77F31CF325213179007801BB /* EntryView.swift */,
+				773A0AA1251C436700C05ED1 /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,10 +291,12 @@
 				773A0AA9251C436800C05ED1 /* Persistence.swift in Sources */,
 				773A0AA2251C436700C05ED1 /* ContentView.swift in Sources */,
 				7766816925205267000454AD /* TodoEntry.swift in Sources */,
+				77F31D1B25214177007801BB /* DisplayView.swift in Sources */,
 				7766815C25203D0E000454AD /* DrilldownView.swift in Sources */,
 				77AD9012251D8F0C0028A26A /* overdoneModel.xcdatamodeld in Sources */,
-				77552EED251D848900C3F46F /* newTodoPage.swift in Sources */,
+				77552EED251D848900C3F46F /* NewTodoPageView.swift in Sources */,
 				773A0AA0251C436700C05ED1 /* overDoneApp.swift in Sources */,
+				77F31CF425213179007801BB /* EntryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
