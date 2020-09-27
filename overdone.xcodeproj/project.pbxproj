@@ -19,7 +19,7 @@
 		7766816925205267000454AD /* TodoEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7766816825205267000454AD /* TodoEntry.swift */; };
 		77AD9012251D8F0C0028A26A /* overdoneModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 77AD9010251D8F0C0028A26A /* overdoneModel.xcdatamodeld */; };
 		77F31CF425213179007801BB /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F31CF325213179007801BB /* EntryView.swift */; };
-		77F31D1B25214177007801BB /* DisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F31D1A25214177007801BB /* DisplayView.swift */; };
+		77F31D1B25214177007801BB /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F31D1A25214177007801BB /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +58,7 @@
 		7766816825205267000454AD /* TodoEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoEntry.swift; sourceTree = "<group>"; };
 		77AD9011251D8F0C0028A26A /* overdoneModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = overdoneModel.xcdatamodel; sourceTree = "<group>"; };
 		77F31CF325213179007801BB /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
-		77F31D1A25214177007801BB /* DisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayView.swift; sourceTree = "<group>"; };
+		77F31D1A25214177007801BB /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,7 +152,7 @@
 			children = (
 				77552EEC251D848900C3F46F /* NewTodoPageView.swift */,
 				7766815B25203D0E000454AD /* DrilldownView.swift */,
-				77F31D1A25214177007801BB /* DisplayView.swift */,
+				77F31D1A25214177007801BB /* DetailView.swift */,
 				77F31CF325213179007801BB /* EntryView.swift */,
 				773A0AA1251C436700C05ED1 /* ContentView.swift */,
 			);
@@ -291,7 +291,7 @@
 				773A0AA9251C436800C05ED1 /* Persistence.swift in Sources */,
 				773A0AA2251C436700C05ED1 /* ContentView.swift in Sources */,
 				7766816925205267000454AD /* TodoEntry.swift in Sources */,
-				77F31D1B25214177007801BB /* DisplayView.swift in Sources */,
+				77F31D1B25214177007801BB /* DetailView.swift in Sources */,
 				7766815C25203D0E000454AD /* DrilldownView.swift in Sources */,
 				77AD9012251D8F0C0028A26A /* overdoneModel.xcdatamodeld in Sources */,
 				77552EED251D848900C3F46F /* NewTodoPageView.swift in Sources */,

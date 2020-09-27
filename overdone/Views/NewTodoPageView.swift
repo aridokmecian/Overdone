@@ -27,7 +27,7 @@ struct newTodoPage: View {
                 .toolbar {
                     ToolbarItem(placement: .navigationBarTrailing) {
                         Button(action: {addEntry()}, label: {
-                            Text("Done").font(.title).bold()
+                            Text("Save").font(.title).bold()
                         })
                     }
                 }

@@ -1,5 +1,5 @@
 //
-//  DisplayView.swift
+//  DetailView.swift
 //  overdone
 //
 //  Created by Ari Dokmecian on 2020-09-27.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct DisplayView: View {
+struct DetailView: View {
     
     
     @Binding var text: String
@@ -26,11 +26,10 @@ struct DisplayView: View {
             
             // Due date section
             if (isDueDate) {
-                    Section(header: Text("Due date")) {
-                        Text(verbatim: getDate(date: dueDate))
+                Section(header: Text("Due date")) {
+                    Text(verbatim: getDate(date: dueDate))
                 }
             }
-            
             
             // Location Section
             if (isLocation){
@@ -56,9 +55,9 @@ struct DisplayView_Previews: PreviewProvider {
     @State static var dueDate = Date()
     @State static var isLocation = true
     @State static var location = "at home"
-
+    
     
     static var previews: some View {
-        DisplayView(text: $text, repeating: $repeating, isDueDate: $isDueDate, dueDate: $dueDate, isLocation: $isLocation, location: $location)
+        DetailView(text: $text, repeating: $repeating, isDueDate: $isDueDate, dueDate: $dueDate, isLocation: $isLocation, location: $location)
     }
 }

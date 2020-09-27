@@ -36,16 +36,23 @@ struct DrilldownView: View {
             if (isEdited()) {
                 EntryView(text: $text, repeating: $repeating, isDueDate: $isDueDate, dueDate: $dueDate, isLocation: $isLocation, location: $location)
                     .environment(\.managedObjectContext, viewContext)
-                Button(action: {updateEntry(entry: entry)}, label: {
-                    Text("click me")
-                })
+            
             } else {
-                DisplayView(text: $text, repeating: $repeating, isDueDate: $isDueDate, dueDate: $dueDate, isLocation: $isLocation, location: $location)
+                DetailView(text: $text, repeating: $repeating, isDueDate: $isDueDate, dueDate: $dueDate, isLocation: $isLocation, location: $location)
             }
         }
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
-                EditButton()
+                Button(action: {
+                    if (self.editMode!.wrappedValue.isEditing) {
+                        updateEntry(entry: entry)
+                        editMode?.wrappedValue = EditMode.inactive
+                    } else {
+                        editMode?.wrappedValue = EditMode.active
+                    }
+                }, label: {
+                    Text( self.editMode!.wrappedValue.isEditing ? "Save" : "Edit")
+                })
             }
         }
     }
