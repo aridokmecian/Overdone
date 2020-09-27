@@ -24,35 +24,32 @@ struct newTodoPage: View {
         NavigationView {
             Form {
                 Section(header: Text("What do you want todo")) {
-                    TextField("eat a pizza ...", text: $text)
+                    TextField("invery a binary tree ...", text: $text)
                         .keyboardType(/*@START_MENU_TOKEN@*/.default/*@END_MENU_TOKEN@*/)
                 }
-                
-                if (text != "") {
-                    
-                    Section(header: Text("Do you want to set a due date?")) {
-                        Toggle(isOn: $isDueDate) {
-                            Text("Due date")
+                Section(header: Text("Date")) {
+                    Toggle(isOn: $isDueDate) {
+                        Text("Due date")
+                    }
+                    if (isDueDate) {
+                        DatePicker("Date", selection: $dueDate)
+                            .datePickerStyle(CompactDatePickerStyle())
+                            .frame(height: 50)
+                        Toggle(isOn: $repeating) {
+                            Text("repating event?")
                         }
-                        if (isDueDate) {
-                            DatePicker("Date", selection: $dueDate)
-                                .datePickerStyle(CompactDatePickerStyle())
-                                .frame(height: 50)
-                            Toggle(isOn: $repeating) {
-                                Text("repating event?")
-                            }
-                        }
-                        
                     }
                     
-                    Section(header: Text("Do you want to set a location?")) {
-                        Toggle(isOn: $isLocation) {
-                            Text("Location")
-                        }
-                        if (isLocation) {
-                            TextField("1 infinite loop, california ...", text: $location)
-                                .keyboardType(/*@START_MENU_TOKEN@*/.default/*@END_MENU_TOKEN@*/)
-                        }
+                }
+                
+                Section(header: Text("Location")) {
+                    Toggle(isOn: $isLocation) {
+                        Text("Location")
+                    }
+                    
+                    if (isLocation) {
+                        TextField("1 infinite loop, california ...", text: $location)
+                            .keyboardType(/*@START_MENU_TOKEN@*/.default/*@END_MENU_TOKEN@*/)
                     }
                 }
             }
@@ -62,6 +59,7 @@ struct newTodoPage: View {
                         Text("Done").font(.title).bold()
                     })
                 }
+                
             }
         }
     }
@@ -71,8 +69,9 @@ struct newTodoPage: View {
         let entry = TodoEntry(context: viewContext)
         entry.text = text
         entry.repeating = repeating
-        entry.dueDate = dueDate
-        entry.location = location
+        entry.dueDate = (isDueDate) ? dueDate : nil
+        entry.location = (isLocation) ? location : nil
+        entry.id = UUID()
         
         do {
             try viewContext.save()

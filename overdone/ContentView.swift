@@ -22,12 +22,16 @@ struct ContentView: View {
         NavigationView {
             List {
                 ForEach(entries) { entry in
-                    Text("\(entry.text!)")
+                    NavigationLink(
+                        destination: DrilldownView(entry: entry),
+                        label: {
+                            Text("\(entry.text!)")
+                        })
                 }
                 .onDelete(perform: deleteEntry)
             }
             .listStyle(InsetGroupedListStyle())
-            .navigationTitle("Over Done")
+            .navigationTitle("Tasks")
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     EditButton()
