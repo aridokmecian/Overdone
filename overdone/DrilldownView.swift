@@ -117,16 +117,16 @@ struct DrilldownView: View {
     }
 }
 
-//struct DrilldownView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        
-//        let store = PersistenceController.preview
-//        
-//        NavigationView {
-//            DrilldownView(entry: TodoEntry(context: store.container.viewContext ,text: "hello World", date: Date(), repeating: false, location: "my house"))
-//        }
-//        
-//    }
-//    
-//    
-//}
+struct DrilldownView_Previews: PreviewProvider {
+    static var previews: some View {
+        
+        let store = PersistenceController.preview
+        
+        NavigationView {
+            DrilldownView(entry: TodoEntry(context: store.container.viewContext ,text: "hello World", date: Date(), repeating: false, location: "my house"))
+        }
+        
+    }
+    
+    
+}
