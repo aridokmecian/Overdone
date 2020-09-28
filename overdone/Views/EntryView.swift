@@ -24,7 +24,7 @@ struct EntryView: View {
                     .keyboardType(.default)
             }
             Section(header: Text("Date")) {
-                Toggle(isOn: $isDueDate) {
+                Toggle(isOn: $isDueDate.animation()) {
                     Text("Due date")
                 }
                 if (isDueDate) {
@@ -39,7 +39,7 @@ struct EntryView: View {
             }
             
             Section(header: Text("Location")) {
-                Toggle(isOn: $isLocation) {
+                Toggle(isOn: $isLocation.animation()) {
                     Text("Location")
                 }
                 

@@ -67,7 +67,10 @@ struct DrilldownView: View {
         entry.location = (isLocation) ? location : nil
         entry.id = UUID()
         do {
-            try viewContext.save()
+            try withAnimation {
+                try viewContext.save()
+            }
+            
         }
         catch {
             fatalError("resolve before shipping app")
