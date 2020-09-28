@@ -1,6 +1,6 @@
 //
 //  entryView.swift
-//  overdone
+//  Overdone
 //
 //  Created by Ari Dokmecian on 2020-09-27.
 //
@@ -21,7 +21,7 @@ struct EntryView: View {
         Form {
             Section(header: Text("Task")) {
                 TextField("invert a binary tree ...", text: $text)
-                    .keyboardType(/*@START_MENU_TOKEN@*/.default/*@END_MENU_TOKEN@*/)
+                    .keyboardType(.default)
             }
             Section(header: Text("Date")) {
                 Toggle(isOn: $isDueDate) {
@@ -45,25 +45,9 @@ struct EntryView: View {
                 
                 if (isLocation) {
                     TextField("1 Infinite Loop, California ...", text: $location)
-                        .keyboardType(/*@START_MENU_TOKEN@*/.default/*@END_MENU_TOKEN@*/)
+                        .keyboardType(.default)
                 }
             }
-        }
-    }
-    
-    func updateEntry() {
-        let entry = TodoEntry(context: viewContext)
-        entry.text = text
-        entry.repeating = repeating
-        entry.dueDate = (isDueDate) ? dueDate : nil
-        entry.location = (isLocation) ? location : nil
-        entry.id = UUID()
-        
-        do {
-            try viewContext.save()
-        }
-        catch {
-            fatalError("resolve before shipping app")
         }
     }
 }

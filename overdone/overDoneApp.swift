@@ -1,6 +1,6 @@
 //
-//  twodoApp.swift
-//  twodo
+//  OverDoneApp.swift
+//  Overdone
 //
 //  Created by Ari Dokmecian on 2020-09-23.
 //
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct overdoneApp: App {
+struct OverdoneApp: App {
     let persistenceController = PersistenceController.shared
 
     var body: some Scene {

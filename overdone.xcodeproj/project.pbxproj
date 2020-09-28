@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		773A0AA0251C436700C05ED1 /* overDoneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773A0A9F251C436700C05ED1 /* overDoneApp.swift */; };
+		773A0AA0251C436700C05ED1 /* OverDoneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773A0A9F251C436700C05ED1 /* OverDoneApp.swift */; };
 		773A0AA2251C436700C05ED1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773A0AA1251C436700C05ED1 /* ContentView.swift */; };
 		773A0AA4251C436800C05ED1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 773A0AA3251C436800C05ED1 /* Assets.xcassets */; };
 		773A0AA7251C436800C05ED1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 773A0AA6251C436800C05ED1 /* Preview Assets.xcassets */; };
@@ -41,7 +41,7 @@
 
 /* Begin PBXFileReference section */
 		773A0A9C251C436700C05ED1 /* overdone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = overdone.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		773A0A9F251C436700C05ED1 /* overDoneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = overDoneApp.swift; sourceTree = "<group>"; };
+		773A0A9F251C436700C05ED1 /* OverDoneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverDoneApp.swift; sourceTree = "<group>"; };
 		773A0AA1251C436700C05ED1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		773A0AA3251C436800C05ED1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		773A0AA6251C436800C05ED1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -119,7 +119,7 @@
 			children = (
 				7722766425216BFE004F15C8 /* Models */,
 				77F31D25252147CA007801BB /* Views */,
-				773A0A9F251C436700C05ED1 /* overDoneApp.swift */,
+				773A0A9F251C436700C05ED1 /* OverDoneApp.swift */,
 				773A0AA3251C436800C05ED1 /* Assets.xcassets */,
 				773A0AA8251C436800C05ED1 /* Persistence.swift */,
 				77AD9010251D8F0C0028A26A /* overdoneModel.xcdatamodeld */,
@@ -303,7 +303,7 @@
 				7766815C25203D0E000454AD /* DrilldownView.swift in Sources */,
 				77AD9012251D8F0C0028A26A /* overdoneModel.xcdatamodeld in Sources */,
 				77552EED251D848900C3F46F /* NewTodoPageView.swift in Sources */,
-				773A0AA0251C436700C05ED1 /* overDoneApp.swift in Sources */,
+				773A0AA0251C436700C05ED1 /* OverDoneApp.swift in Sources */,
 				77F31CF425213179007801BB /* EntryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,6 +1,6 @@
 //
 //  DetailView.swift
-//  overdone
+//  Overdone
 //
 //  Created by Ari Dokmecian on 2020-09-27.
 //

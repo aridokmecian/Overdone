@@ -1,6 +1,6 @@
 //
 //  newTodoPage.swift
-//  twodo
+//  Overdone
 //
 //  Created by Ari Dokmecian on 2020-09-24.
 //
@@ -8,7 +8,7 @@
 import SwiftUI
 import CoreData
 
-struct newTodoPage: View {
+struct NewTodoPage: View {
     @Environment(\.presentationMode) var presentationMode
     @Environment(\.managedObjectContext) private var viewContext
     
@@ -56,6 +56,6 @@ struct newTodoPage: View {
 
 struct newTodoPage_Previews: PreviewProvider {
     static var previews: some View {
-        newTodoPage()
+        NewTodoPage()
     }
 }

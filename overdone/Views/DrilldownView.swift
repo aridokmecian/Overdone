@@ -1,6 +1,6 @@
 //
 //  DrilldownView.swift
-//  overdone
+//  Overdone
 //
 //  Created by Ari Dokmecian on 2020-09-26.
 //
@@ -30,10 +30,13 @@ struct DrilldownView: View {
     @State private var location: String
     @State private var entry: TodoEntry
     
+    var isEdited: Bool {
+        self.editMode?.wrappedValue.isEditing ?? false
+    }
+    
     var body: some View {
         VStack {
-            let isEdited = { self.editMode!.wrappedValue.isEditing }
-            if (isEdited()) {
+            if (isEdited) {
                 EntryView(text: $text, repeating: $repeating, isDueDate: $isDueDate, dueDate: $dueDate, isLocation: $isLocation, location: $location)
                     .environment(\.managedObjectContext, viewContext)
             
@@ -44,14 +47,14 @@ struct DrilldownView: View {
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button(action: {
-                    if (self.editMode!.wrappedValue.isEditing) {
+                    if (isEdited) {
                         updateEntry(entry: entry)
                         editMode?.wrappedValue = EditMode.inactive
                     } else {
                         editMode?.wrappedValue = EditMode.active
                     }
                 }, label: {
-                    Text( self.editMode!.wrappedValue.isEditing ? "Save" : "Edit")
+                    Text( isEdited ? "Save" : "Edit")
                 })
             }
         }
