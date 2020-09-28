@@ -20,7 +20,7 @@ struct EntryView: View {
     var body: some View {
         Form {
             Section(header: Text("Task")) {
-                TextField("invery a binary tree ...", text: $text)
+                TextField("invert a binary tree ...", text: $text)
                     .keyboardType(/*@START_MENU_TOKEN@*/.default/*@END_MENU_TOKEN@*/)
             }
             Section(header: Text("Date")) {
@@ -32,7 +32,7 @@ struct EntryView: View {
                         .datePickerStyle(CompactDatePickerStyle())
                         .frame(height: 50)
                     Toggle(isOn: $repeating) {
-                        Text("repating event?")
+                        Text("repeating event")
                     }
                 }
                 
@@ -44,7 +44,7 @@ struct EntryView: View {
                 }
                 
                 if (isLocation) {
-                    TextField("1 infinite loop, california ...", text: $location)
+                    TextField("1 Infinite Loop, California ...", text: $location)
                         .keyboardType(/*@START_MENU_TOKEN@*/.default/*@END_MENU_TOKEN@*/)
                 }
             }

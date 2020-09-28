@@ -86,6 +86,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7722766425216BFE004F15C8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7766816825205267000454AD /* TodoEntry.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		773A0A93251C436700C05ED1 = {
 			isa = PBXGroup;
 			children = (
@@ -109,12 +117,12 @@
 		773A0A9E251C436700C05ED1 /* overdone */ = {
 			isa = PBXGroup;
 			children = (
+				7722766425216BFE004F15C8 /* Models */,
 				77F31D25252147CA007801BB /* Views */,
 				773A0A9F251C436700C05ED1 /* overDoneApp.swift */,
 				773A0AA3251C436800C05ED1 /* Assets.xcassets */,
 				773A0AA8251C436800C05ED1 /* Persistence.swift */,
 				77AD9010251D8F0C0028A26A /* overdoneModel.xcdatamodeld */,
-				7766816825205267000454AD /* TodoEntry.swift */,
 				773A0AAD251C436800C05ED1 /* Info.plist */,
 				773A0AA5251C436800C05ED1 /* Preview Content */,
 			);
