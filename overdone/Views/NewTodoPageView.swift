@@ -4,7 +4,6 @@
 //
 //  Created by Ari Dokmecian on 2020-09-24.
 //
-
 import SwiftUI
 import CoreData
 

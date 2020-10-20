@@ -16,21 +16,47 @@ struct ContentView: View {
         animation: .default)
     private var entries: FetchedResults<TodoEntry>
     
+    @State var time = Timer.publish(every: 0.1, on: .current, in: .tracking).autoconnect()
+    
     @State private var showSheet = false
+    
+    @State private var showButton = true
     
     var body: some View {
         NavigationView {
-            List {
-                ForEach(entries) { entry in
-                    NavigationLink(
-                        destination: DrilldownView(entry: entry),
-                        label: {
-                            Text("\(entry.text!)")
+            Group {
+                if (entries.isEmpty) {
+                    VStack(spacing: 16) {
+                        Image("box")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 100)
+                        Text("You have no tasks today! Take it easy!")
+                        Button(action: {
+                            self.showSheet = true
+                        }, label: {
+                            Text("Add a task!")
                         })
+                    }
+                } else {
+                    ScrollView {
+                        LazyVStack(alignment: .center, pinnedViews: [.sectionFooters]) {
+                            Section(footer: FloatingButtonView(action: {self.showSheet = true})) {
+                                
+                                ForEach(entries) { entry in
+                                    NavigationLink(
+                                        destination: DrilldownView(entry: entry),
+                                        label: {
+                                            ListEntry(entry: entry)
+                                        })
+                                }
+                                .onDelete(perform: deleteEntry)
+                                
+                            }
+                        }
+                    }
                 }
-                .onDelete(perform: deleteEntry)
             }
-            .listStyle(InsetGroupedListStyle())
             .navigationTitle("Tasks")
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
@@ -53,13 +79,15 @@ struct ContentView: View {
         }
     }
     
-
+    
     
     private func deleteEntry(offsets: IndexSet) {
         offsets.map { entries[$0] }.forEach(viewContext.delete)
         
         do {
-            try viewContext.save()
+            try withAnimation {
+                try viewContext.save()
+            }
         } catch {
             // Replace this implementation with code to handle the error appropriately.
             // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
