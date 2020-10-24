@@ -14,9 +14,8 @@ struct ContentView: View {
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \TodoEntry.dueDate, ascending: false)],
         animation: .default)
-    private var entries: FetchedResults<TodoEntry>
     
-    @State var time = Timer.publish(every: 0.1, on: .current, in: .tracking).autoconnect()
+    private var entries: FetchedResults<TodoEntry>
     
     @State private var showSheet = false
     
@@ -44,15 +43,10 @@ struct ContentView: View {
                             Section(footer: FloatingButtonView(action: {self.showSheet = true})) {
                                 
                                 ForEach(entries) { entry in
-                                    NavigationLink(
-                                        destination: DrilldownView(entry: entry),
-                                        label: {
-                                            ListEntry(entry: entry)
-                                        })
+                                    ListEntry(entry: entry)
                                 }
-                                .onDelete(perform: deleteEntry)
-                                
                             }
+//                            .onDelete(perform: deleteEntry)
                         }
                     }
                 }
@@ -66,7 +60,6 @@ struct ContentView: View {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: {
                         self.showSheet = true
-                        
                     }) {
                         Label("Add Item", systemImage: "plus")
                     }
@@ -78,8 +71,6 @@ struct ContentView: View {
                 .environment(\.managedObjectContext, self.viewContext)
         }
     }
-    
-    
     
     private func deleteEntry(offsets: IndexSet) {
         offsets.map { entries[$0] }.forEach(viewContext.delete)
