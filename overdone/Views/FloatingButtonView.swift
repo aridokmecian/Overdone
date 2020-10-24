@@ -20,7 +20,7 @@ struct FloatingButtonView: View {
                         ZStack {
                             Rectangle()
                                 .cornerRadius(25)
-                                .frame(width: 300, height: 50, alignment: .center)
+                                .frame(width: 300, height: 60, alignment: .center)
                             Text("Click to Add New Entry")
                                 .foregroundColor(.white)
                                 .font(.subheadline)
