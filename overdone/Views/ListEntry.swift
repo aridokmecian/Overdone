@@ -34,7 +34,6 @@ struct ListEntry: View {
                 HStack {
                     Spacer()
                     Button(action: {
-                        print("tapped")
                         withAnimation {
                             viewContext.delete(entry)
                             try? viewContext.save()
