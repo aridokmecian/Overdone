@@ -18,7 +18,8 @@
 		77552EED251D848900C3F46F /* NewTodoPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77552EEC251D848900C3F46F /* NewTodoPageView.swift */; };
 		77593D692521A69900B3D2E9 /* FloatingButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77593D682521A69900B3D2E9 /* FloatingButtonView.swift */; };
 		7766815C25203D0E000454AD /* DrilldownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7766815B25203D0E000454AD /* DrilldownView.swift */; };
-		7766816925205267000454AD /* TodoEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7766816825205267000454AD /* TodoEntry.swift */; };
+		7784E070256247CE000B97FC /* TodoEntry+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7784E06E256247CE000B97FC /* TodoEntry+CoreDataClass.swift */; };
+		7784E071256247CE000B97FC /* TodoEntry+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7784E06F256247CE000B97FC /* TodoEntry+CoreDataProperties.swift */; };
 		77AD9012251D8F0C0028A26A /* overdoneModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 77AD9010251D8F0C0028A26A /* overdoneModel.xcdatamodeld */; };
 		77F31CF425213179007801BB /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F31CF325213179007801BB /* EntryView.swift */; };
 		77F31D1B25214177007801BB /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F31D1A25214177007801BB /* DetailView.swift */; };
@@ -59,7 +60,8 @@
 		77552EEC251D848900C3F46F /* NewTodoPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTodoPageView.swift; sourceTree = "<group>"; };
 		77593D682521A69900B3D2E9 /* FloatingButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingButtonView.swift; sourceTree = "<group>"; };
 		7766815B25203D0E000454AD /* DrilldownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrilldownView.swift; sourceTree = "<group>"; };
-		7766816825205267000454AD /* TodoEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoEntry.swift; sourceTree = "<group>"; };
+		7784E06E256247CE000B97FC /* TodoEntry+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TodoEntry+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7784E06F256247CE000B97FC /* TodoEntry+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TodoEntry+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		77AD9011251D8F0C0028A26A /* overdoneModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = overdoneModel.xcdatamodel; sourceTree = "<group>"; };
 		77F31CF325213179007801BB /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
 		77F31D1A25214177007801BB /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
@@ -93,7 +95,8 @@
 		7722766425216BFE004F15C8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				7766816825205267000454AD /* TodoEntry.swift */,
+				7784E06E256247CE000B97FC /* TodoEntry+CoreDataClass.swift */,
+				7784E06F256247CE000B97FC /* TodoEntry+CoreDataProperties.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -302,9 +305,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7784E070256247CE000B97FC /* TodoEntry+CoreDataClass.swift in Sources */,
 				773A0AA9251C436800C05ED1 /* Persistence.swift in Sources */,
 				773A0AA2251C436700C05ED1 /* ContentView.swift in Sources */,
-				7766816925205267000454AD /* TodoEntry.swift in Sources */,
 				77F31D1B25214177007801BB /* DetailView.swift in Sources */,
 				7766815C25203D0E000454AD /* DrilldownView.swift in Sources */,
 				773A679E253E865B002B0FEE /* ListEntry.swift in Sources */,
@@ -313,6 +316,7 @@
 				773A0AA0251C436700C05ED1 /* OverDoneApp.swift in Sources */,
 				77593D692521A69900B3D2E9 /* FloatingButtonView.swift in Sources */,
 				77F31CF425213179007801BB /* EntryView.swift in Sources */,
+				7784E071256247CE000B97FC /* TodoEntry+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

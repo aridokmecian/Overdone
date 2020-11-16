@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ListEntry: View {
     
+    @Environment(\.managedObjectContext) private var viewContext
     @State var entry: TodoEntry
     
     @State private var offset: CGFloat = 0 // 1
@@ -32,11 +33,20 @@ struct ListEntry: View {
                 RoundedRectangle(cornerRadius: 9)
                 HStack {
                     Spacer()
+                    Button(action: {
+                        print("tapped")
+                        withAnimation {
+                            viewContext.delete(entry)
+                            try? viewContext.save()
+                        }
+                    }) {
                     Image(systemName: "trash")
                         .font(.title)
                         .foregroundColor(.white)
                         .frame(width: 90, height: 50)
+                    }
                 }
+        
             }
             GroupBox(
                 label: HStack {
@@ -105,7 +115,7 @@ struct ListEntry: View {
 }
 
 // Struct that hold buttonStyle that does not show animations
-struct  TapDisabledButtonStyle: PrimitiveButtonStyle {
+struct  TapDisabledButtonStyle: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
             configuration
             .label
