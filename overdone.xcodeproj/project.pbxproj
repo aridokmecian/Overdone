@@ -95,8 +95,7 @@
 		7722766425216BFE004F15C8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				7784E06E256247CE000B97FC /* TodoEntry+CoreDataClass.swift */,
-				7784E06F256247CE000B97FC /* TodoEntry+CoreDataProperties.swift */,
+				7784E07E256254B5000B97FC /* TodoEntry */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -160,6 +159,15 @@
 				773A0AC3251C436900C05ED1 /* Info.plist */,
 			);
 			path = overdoneUITests;
+			sourceTree = "<group>";
+		};
+		7784E07E256254B5000B97FC /* TodoEntry */ = {
+			isa = PBXGroup;
+			children = (
+				7784E06E256247CE000B97FC /* TodoEntry+CoreDataClass.swift */,
+				7784E06F256247CE000B97FC /* TodoEntry+CoreDataProperties.swift */,
+			);
+			path = TodoEntry;
 			sourceTree = "<group>";
 		};
 		77F31D25252147CA007801BB /* Views */ = {
