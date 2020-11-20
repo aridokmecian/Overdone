@@ -19,6 +19,8 @@ struct ListView: View {
     @State private var showSheet = false
     
     @State private var showButton = true
+    
+    @State private var selection = 0
     var body: some View {
         NavigationView {
             Group {
@@ -37,6 +39,15 @@ struct ListView: View {
                     }
                 } else {
                     ScrollView {
+                        Picker("Priority", selection: $selection) {
+                            Text("None").tag(0)
+                                .font(.title)
+                            Text("Low").tag(1)
+                                .font(.title)
+                            Text("High").tag(2)
+                                .font(.title)
+                        }.pickerStyle(SegmentedPickerStyle())
+                        .padding()
                         LazyVStack(alignment: .center, pinnedViews: [.sectionFooters]) {
                             Section(footer: FloatingButtonView(action: {self.showSheet = true})) {
                                 
