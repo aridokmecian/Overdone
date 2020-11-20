@@ -14,7 +14,7 @@ struct DrilldownView: View {
     
     init(entry: TodoEntry) {
         _entry = .init(initialValue: entry)
-        _text = .init(initialValue: entry.text!)
+        _text = .init(initialValue: entry.text ?? "")
         _repeating = .init(initialValue: entry.repeating)
         _isDueDate = .init(initialValue: entry.dueDate != nil)
         _dueDate = .init(initialValue: entry.dueDate ?? Date())
@@ -79,20 +79,10 @@ struct DrilldownView: View {
 }
 
 struct DrilldownView_Previews: PreviewProvider {
-    
-    let store = PersistenceController.preview
-    
     @State static var entry = TodoEntry()
     
     static var previews: some View {
         let store = PersistenceController.preview
-        entry = .init(context: store.container.viewContext)
-        entry.text = "Hello World"
-        entry.repeating = false
-        entry.dueDate = Date()
-        entry.location = "Home"
-                
-        return DrilldownView(entry: entry)
-            .environment(\.managedObjectContext, store.container.viewContext)
+        return DrilldownView(entry: TodoEntry(context: store.container.viewContext, text: "Name"))
     }
 }

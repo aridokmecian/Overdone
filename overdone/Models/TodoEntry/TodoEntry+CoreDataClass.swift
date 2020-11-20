@@ -18,4 +18,13 @@ public class TodoEntry: NSManagedObject {
         self.repeating = repeating
         self.location = location
     }
+    
+    convenience init(context: NSManagedObjectContext, text: String) {
+        self.init(context: context)
+        self.text = text
+        self.dueDate = Date()
+        self.repeating = false
+        self.location = "Home"
+    }
+
 }

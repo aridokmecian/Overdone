@@ -14,7 +14,8 @@
 		773A0AA9251C436800C05ED1 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773A0AA8251C436800C05ED1 /* Persistence.swift */; };
 		773A0AB7251C436900C05ED1 /* overdoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773A0AB6251C436900C05ED1 /* overdoneTests.swift */; };
 		773A0AC2251C436900C05ED1 /* overdoneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773A0AC1251C436900C05ED1 /* overdoneUITests.swift */; };
-		773A679E253E865B002B0FEE /* ListEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773A679D253E865A002B0FEE /* ListEntry.swift */; };
+		773A679E253E865B002B0FEE /* ListEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773A679D253E865A002B0FEE /* ListEntryView.swift */; };
+		773C0E0F25678523008A2529 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773C0E0E25678523008A2529 /* ListView.swift */; };
 		77552EED251D848900C3F46F /* NewTodoPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77552EEC251D848900C3F46F /* NewTodoPageView.swift */; };
 		77593D692521A69900B3D2E9 /* FloatingButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77593D682521A69900B3D2E9 /* FloatingButtonView.swift */; };
 		7766815C25203D0E000454AD /* DrilldownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7766815B25203D0E000454AD /* DrilldownView.swift */; };
@@ -56,7 +57,8 @@
 		773A0ABD251C436900C05ED1 /* overdoneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = overdoneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		773A0AC1251C436900C05ED1 /* overdoneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = overdoneUITests.swift; sourceTree = "<group>"; };
 		773A0AC3251C436900C05ED1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		773A679D253E865A002B0FEE /* ListEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListEntry.swift; sourceTree = "<group>"; };
+		773A679D253E865A002B0FEE /* ListEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListEntryView.swift; sourceTree = "<group>"; };
+		773C0E0E25678523008A2529 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		77552EEC251D848900C3F46F /* NewTodoPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTodoPageView.swift; sourceTree = "<group>"; };
 		77593D682521A69900B3D2E9 /* FloatingButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingButtonView.swift; sourceTree = "<group>"; };
 		7766815B25203D0E000454AD /* DrilldownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrilldownView.swift; sourceTree = "<group>"; };
@@ -179,7 +181,8 @@
 				77F31CF325213179007801BB /* EntryView.swift */,
 				773A0AA1251C436700C05ED1 /* ContentView.swift */,
 				77593D682521A69900B3D2E9 /* FloatingButtonView.swift */,
-				773A679D253E865A002B0FEE /* ListEntry.swift */,
+				773A679D253E865A002B0FEE /* ListEntryView.swift */,
+				773C0E0E25678523008A2529 /* ListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -314,11 +317,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7784E070256247CE000B97FC /* TodoEntry+CoreDataClass.swift in Sources */,
+				773C0E0F25678523008A2529 /* ListView.swift in Sources */,
 				773A0AA9251C436800C05ED1 /* Persistence.swift in Sources */,
 				773A0AA2251C436700C05ED1 /* ContentView.swift in Sources */,
 				77F31D1B25214177007801BB /* DetailView.swift in Sources */,
 				7766815C25203D0E000454AD /* DrilldownView.swift in Sources */,
-				773A679E253E865B002B0FEE /* ListEntry.swift in Sources */,
+				773A679E253E865B002B0FEE /* ListEntryView.swift in Sources */,
 				77AD9012251D8F0C0028A26A /* overdoneModel.xcdatamodeld in Sources */,
 				77552EED251D848900C3F46F /* NewTodoPageView.swift in Sources */,
 				773A0AA0251C436700C05ED1 /* OverDoneApp.swift in Sources */,
