@@ -9,32 +9,26 @@ import SwiftUI
 
 struct DetailView: View {
     
-    
-    @Binding var text: String
-    @Binding var repeating: Bool
-    @Binding var isDueDate: Bool
-    @Binding var dueDate: Date
-    @Binding var isLocation: Bool
-    @Binding var location: String
+    @Binding var entry: TodoEntry
     
     var body: some View {
         Form {
             // Task section
             Section(header: Text("Task")) {
-                Text(text)
+                Text(entry.text!)
             }
             
             // Due date section
-            if (isDueDate) {
+            if (entry.dueDate != nil) {
                 Section(header: Text("Due date")) {
-                    Text(verbatim: getDate(date: dueDate))
+                    Text(verbatim: getDate(date: entry.dueDate!))
                 }
             }
             
             // Location Section
-            if (isLocation){
+            if (entry.location != nil){
                 Section(header: Text("Location")) {
-                    Text(location.description)
+                    Text(entry.location!.description)
                 }
             }
         }
@@ -48,16 +42,9 @@ struct DetailView: View {
     }
 }
 
-struct DisplayView_Previews: PreviewProvider {
-    @State static var text = "hello world"
-    @State static var repeating = false
-    @State static var isDueDate = true
-    @State static var dueDate = Date()
-    @State static var isLocation = true
-    @State static var location = "at home"
-    
-    
+struct DisplayView_Previews: PreviewProvider {    
     static var previews: some View {
-        DetailView(text: $text, repeating: $repeating, isDueDate: $isDueDate, dueDate: $dueDate, isLocation: $isLocation, location: $location)
+        let store = PersistenceController.preview
+        DetailView(entry: .constant(TodoEntry(context: store.container.viewContext, text: "Hello World")))
     }
 }

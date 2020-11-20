@@ -41,7 +41,7 @@ struct DrilldownView: View {
                     .environment(\.managedObjectContext, viewContext)
             
             } else {
-                DetailView(text: $text, repeating: $repeating, isDueDate: $isDueDate, dueDate: $dueDate, isLocation: $isLocation, location: $location)
+                DetailView(entry: $entry)
             }
         }
         .toolbar {
