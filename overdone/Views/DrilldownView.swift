@@ -39,7 +39,6 @@ struct DrilldownView: View {
             if (isEdited) {
                 EntryView(text: $text, repeating: $repeating, isDueDate: $isDueDate, dueDate: $dueDate, isLocation: $isLocation, location: $location)
                     .environment(\.managedObjectContext, viewContext)
-            
             } else {
                 DetailView(entry: $entry)
             }
@@ -70,7 +69,6 @@ struct DrilldownView: View {
             try withAnimation {
                 try viewContext.save()
             }
-            
         }
         catch {
             fatalError("resolve before shipping app")

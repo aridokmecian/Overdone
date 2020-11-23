@@ -49,7 +49,7 @@ struct ListView: View {
                         }.pickerStyle(SegmentedPickerStyle())
                         .padding()
                         LazyVStack(alignment: .center, pinnedViews: [.sectionFooters]) {
-                            Section(footer: FloatingButtonView(action: {self.showSheet = true})) {
+                            Section(footer: FloatingButtonView(action: {self.showSheet = true}).padding()) {
                                 
                                 ForEach(entries) { entry in
                                     ListEntry(entry: entry)
