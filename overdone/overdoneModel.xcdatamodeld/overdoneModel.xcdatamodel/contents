@@ -10,16 +10,8 @@
         <attribute name="repeating" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="text" optional="YES" attributeType="String"/>
     </entity>
-    <entity name="TodoEntry1" representedClassName="TodoEntry" syncable="YES" codeGenerationType="class">
-        <attribute name="dueDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
-        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
-        <attribute name="location" optional="YES" attributeType="String"/>
-        <attribute name="repeating" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
-        <attribute name="text" optional="YES" attributeType="String"/>
-    </entity>
     <elements>
         <element name="Item" positionX="-63" positionY="-18" width="128" height="58"/>
         <element name="TodoEntry" positionX="-54" positionY="0" width="128" height="14"/>
-        <element name="TodoEntry1" positionX="-54" positionY="0" width="128" height="104"/>
     </elements>
 </model>

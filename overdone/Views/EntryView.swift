@@ -44,8 +44,13 @@ struct EntryView: View {
                 }
                 
                 if (isLocation) {
-                    TextField("1 Infinite Loop, California ...", text: $location)
-                        .keyboardType(.default)
+                    NavigationLink(
+                        destination: LocationSelectorView(),
+                        label: {
+                            Text("Label")
+                        })
+//                    TextField("1 Infinite Loop, California ...", text: $location)
+//                        .keyboardType(.default)
                 }
             }
         }
