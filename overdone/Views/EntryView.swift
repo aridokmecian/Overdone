@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct EntryView: View {
     @Environment(\.managedObjectContext) private var viewContext
@@ -16,6 +17,8 @@ struct EntryView: View {
     @Binding var dueDate: Date
     @Binding var isLocation: Bool
     @Binding var location: String
+    
+    @State private var loc: MKLocalSearchCompletion?
     
     var body: some View {
         Form {
@@ -45,12 +48,10 @@ struct EntryView: View {
                 
                 if (isLocation) {
                     NavigationLink(
-                        destination: LocationSelectorView(),
+                        destination: LocationSelectorView(result: $location),
                         label: {
-                            Text("Label")
+                            Text(location.isEmpty ? "Click to add location" : location)
                         })
-//                    TextField("1 Infinite Loop, California ...", text: $location)
-//                        .keyboardType(.default)
                 }
             }
         }

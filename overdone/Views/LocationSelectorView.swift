@@ -11,17 +11,14 @@ import MapKit
 
 struct LocationSelectorView: View {
     
-    @ObservedObject var location: LocationObservable
-    private var mapSearcher: MapViewModel
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
-    init() {
-        let loc = LocationObservable()
-        location = loc
-        mapSearcher = MapViewModel(location: loc)
-    }
+    @ObservedObject var location = LocationObservable()
+    @Binding var result: String
+    @State private var mapSearcher: MapViewModel?
     
     private let locationManager = CLLocationManager()
-    private var currentPlacemark: CLPlacemark?
+     var currentPlacemark: CLPlacemark?
     
     var body: some View {
         VStack {
@@ -38,10 +35,19 @@ struct LocationSelectorView: View {
             List {
                 if (!location.results.isEmpty) {
                     ForEach(location.results) { entry in
+                        Button(action: {
+                            result = entry.title + " " + entry.subtitle
+                            self.presentationMode.wrappedValue.dismiss()
+                        }) {
                             Text(entry.title + " " + entry.subtitle)
+                        }
                     }
                 }
             }
+        }
+        .onAppear {
+            self.mapSearcher = MapViewModel(location: location)
+            
         }
     }
 }
@@ -49,6 +55,6 @@ struct LocationSelectorView: View {
 
 struct LocationSelectorView_Previews: PreviewProvider {
     static var previews: some View {
-        LocationSelectorView()
+        LocationSelectorView(result: .constant("Hello World"))
     }
 }
