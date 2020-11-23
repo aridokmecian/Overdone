@@ -4,15 +4,25 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>overdone 1.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
-		</dict>
 		<key>overdone.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>overdoneWatch (Complication).xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>overdoneWatch (Notification).xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>overdoneWatch.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
 		</dict>
 		<key>twodo.xcscheme_^#shared#^_</key>
 		<dict>
@@ -33,6 +43,31 @@
 			<true/>
 		</dict>
 		<key>773A0ABC251C436900C05ED1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>77892FB0256B55BD009273FC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>77D1C372256B2B5C00647B8F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>77D1C388256B2B5F00647B8F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>77D1C393256B2B5F00647B8F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>77D1C3AB256B2BE800647B8F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

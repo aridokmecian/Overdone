@@ -21,6 +21,16 @@
 		7766815C25203D0E000454AD /* DrilldownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7766815B25203D0E000454AD /* DrilldownView.swift */; };
 		7784E070256247CE000B97FC /* TodoEntry+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7784E06E256247CE000B97FC /* TodoEntry+CoreDataClass.swift */; };
 		7784E071256247CE000B97FC /* TodoEntry+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7784E06F256247CE000B97FC /* TodoEntry+CoreDataProperties.swift */; };
+		77892FB4256B55BE009273FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77892FB3256B55BE009273FC /* Assets.xcassets */; };
+		77892FBB256B55BE009273FC /* overdoneWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 77892FBA256B55BE009273FC /* overdoneWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		77892FC0256B55BE009273FC /* overdoneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77892FBF256B55BE009273FC /* overdoneApp.swift */; };
+		77892FC2256B55BE009273FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77892FC1256B55BE009273FC /* ContentView.swift */; };
+		77892FC4256B55BE009273FC /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77892FC3256B55BE009273FC /* NotificationController.swift */; };
+		77892FC6256B55BE009273FC /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77892FC5256B55BE009273FC /* NotificationView.swift */; };
+		77892FC8256B55BE009273FC /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77892FC7256B55BE009273FC /* ComplicationController.swift */; };
+		77892FCA256B55BF009273FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77892FC9256B55BF009273FC /* Assets.xcassets */; };
+		77892FCD256B55BF009273FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77892FCC256B55BF009273FC /* Preview Assets.xcassets */; };
+		77892FD2256B55BF009273FC /* overdoneWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 77892FB1256B55BD009273FC /* overdoneWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		77AD9012251D8F0C0028A26A /* overdoneModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 77AD9010251D8F0C0028A26A /* overdoneModel.xcdatamodeld */; };
 		77F31CF425213179007801BB /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F31CF325213179007801BB /* EntryView.swift */; };
 		77F31D1B25214177007801BB /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F31D1A25214177007801BB /* DetailView.swift */; };
@@ -41,7 +51,46 @@
 			remoteGlobalIDString = 773A0A9B251C436700C05ED1;
 			remoteInfo = twodo;
 		};
+		77892FBC256B55BE009273FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 773A0A94251C436700C05ED1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77892FB9256B55BE009273FC;
+			remoteInfo = "overdoneWatch Extension";
+		};
+		77892FD0256B55BF009273FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 773A0A94251C436700C05ED1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77892FB0256B55BD009273FC;
+			remoteInfo = overdoneWatch;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		77892FD6256B55BF009273FC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				77892FBB256B55BE009273FC /* overdoneWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77D1C3D5256B2BEB00647B8F /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				77892FD2256B55BF009273FC /* overdoneWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		773A0A9C251C436700C05ED1 /* overdone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = overdone.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +113,20 @@
 		7766815B25203D0E000454AD /* DrilldownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrilldownView.swift; sourceTree = "<group>"; };
 		7784E06E256247CE000B97FC /* TodoEntry+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TodoEntry+CoreDataClass.swift"; sourceTree = "<group>"; };
 		7784E06F256247CE000B97FC /* TodoEntry+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TodoEntry+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		77892FB1256B55BD009273FC /* overdoneWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = overdoneWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		77892FB3256B55BE009273FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		77892FB5256B55BE009273FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77892FBA256B55BE009273FC /* overdoneWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "overdoneWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77892FBF256B55BE009273FC /* overdoneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = overdoneApp.swift; sourceTree = "<group>"; };
+		77892FC1256B55BE009273FC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		77892FC3256B55BE009273FC /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		77892FC5256B55BE009273FC /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		77892FC7256B55BE009273FC /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		77892FC9256B55BF009273FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		77892FCC256B55BF009273FC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		77892FCE256B55BF009273FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77892FCF256B55BF009273FC /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		77892FE9256B5A4B009273FC /* overdone.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = overdone.entitlements; sourceTree = "<group>"; };
 		77AD9011251D8F0C0028A26A /* overdoneModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = overdoneModel.xcdatamodel; sourceTree = "<group>"; };
 		77F31CF325213179007801BB /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
 		77F31D1A25214177007801BB /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
@@ -91,6 +154,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		77892FB7256B55BE009273FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -108,6 +178,8 @@
 				773A0A9E251C436700C05ED1 /* overdone */,
 				773A0AB5251C436900C05ED1 /* overdoneTests */,
 				773A0AC0251C436900C05ED1 /* overdoneUITests */,
+				77892FB2256B55BD009273FC /* overdoneWatch */,
+				77892FBE256B55BE009273FC /* overdoneWatch Extension */,
 				773A0A9D251C436700C05ED1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -118,6 +190,8 @@
 				773A0A9C251C436700C05ED1 /* overdone.app */,
 				773A0AB2251C436900C05ED1 /* overdoneTests.xctest */,
 				773A0ABD251C436900C05ED1 /* overdoneUITests.xctest */,
+				77892FB1256B55BD009273FC /* overdoneWatch.app */,
+				77892FBA256B55BE009273FC /* overdoneWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,6 +199,7 @@
 		773A0A9E251C436700C05ED1 /* overdone */ = {
 			isa = PBXGroup;
 			children = (
+				77892FE9256B5A4B009273FC /* overdone.entitlements */,
 				7722766425216BFE004F15C8 /* Models */,
 				77F31D25252147CA007801BB /* Views */,
 				773A0A9F251C436700C05ED1 /* OverDoneApp.swift */,
@@ -172,6 +247,39 @@
 			path = TodoEntry;
 			sourceTree = "<group>";
 		};
+		77892FB2256B55BD009273FC /* overdoneWatch */ = {
+			isa = PBXGroup;
+			children = (
+				77892FB3256B55BE009273FC /* Assets.xcassets */,
+				77892FB5256B55BE009273FC /* Info.plist */,
+			);
+			path = overdoneWatch;
+			sourceTree = "<group>";
+		};
+		77892FBE256B55BE009273FC /* overdoneWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				77892FBF256B55BE009273FC /* overdoneApp.swift */,
+				77892FC1256B55BE009273FC /* ContentView.swift */,
+				77892FC3256B55BE009273FC /* NotificationController.swift */,
+				77892FC5256B55BE009273FC /* NotificationView.swift */,
+				77892FC7256B55BE009273FC /* ComplicationController.swift */,
+				77892FC9256B55BF009273FC /* Assets.xcassets */,
+				77892FCE256B55BF009273FC /* Info.plist */,
+				77892FCF256B55BF009273FC /* PushNotificationPayload.apns */,
+				77892FCB256B55BF009273FC /* Preview Content */,
+			);
+			path = "overdoneWatch Extension";
+			sourceTree = "<group>";
+		};
+		77892FCB256B55BF009273FC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				77892FCC256B55BF009273FC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		77F31D25252147CA007801BB /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -197,10 +305,12 @@
 				773A0A98251C436700C05ED1 /* Sources */,
 				773A0A99251C436700C05ED1 /* Frameworks */,
 				773A0A9A251C436700C05ED1 /* Resources */,
+				77D1C3D5256B2BEB00647B8F /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				77892FD1256B55BF009273FC /* PBXTargetDependency */,
 			);
 			name = overdone;
 			productName = twodo;
@@ -243,14 +353,48 @@
 			productReference = 773A0ABD251C436900C05ED1 /* overdoneUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		77892FB0256B55BD009273FC /* overdoneWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77892FD7256B55BF009273FC /* Build configuration list for PBXNativeTarget "overdoneWatch" */;
+			buildPhases = (
+				77892FAF256B55BD009273FC /* Resources */,
+				77892FD6256B55BF009273FC /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77892FBD256B55BE009273FC /* PBXTargetDependency */,
+			);
+			name = overdoneWatch;
+			productName = overdoneWatch;
+			productReference = 77892FB1256B55BD009273FC /* overdoneWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		77892FB9256B55BE009273FC /* overdoneWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77892FD3256B55BF009273FC /* Build configuration list for PBXNativeTarget "overdoneWatch Extension" */;
+			buildPhases = (
+				77892FB6256B55BE009273FC /* Sources */,
+				77892FB7256B55BE009273FC /* Frameworks */,
+				77892FB8256B55BE009273FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "overdoneWatch Extension";
+			productName = "overdoneWatch Extension";
+			productReference = 77892FBA256B55BE009273FC /* overdoneWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		773A0A94251C436700C05ED1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1200;
-				LastUpgradeCheck = 1200;
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
 				TargetAttributes = {
 					773A0A9B251C436700C05ED1 = {
 						CreatedOnToolsVersion = 12.0;
@@ -262,6 +406,12 @@
 					773A0ABC251C436900C05ED1 = {
 						CreatedOnToolsVersion = 12.0;
 						TestTargetID = 773A0A9B251C436700C05ED1;
+					};
+					77892FB0256B55BD009273FC = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					77892FB9256B55BE009273FC = {
+						CreatedOnToolsVersion = 12.2;
 					};
 				};
 			};
@@ -281,6 +431,8 @@
 				773A0A9B251C436700C05ED1 /* overdone */,
 				773A0AB1251C436900C05ED1 /* overdoneTests */,
 				773A0ABC251C436900C05ED1 /* overdoneUITests */,
+				77892FB0256B55BD009273FC /* overdoneWatch */,
+				77892FB9256B55BE009273FC /* overdoneWatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -306,6 +458,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77892FAF256B55BD009273FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77892FB4256B55BE009273FC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77892FB8256B55BE009273FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77892FCD256B55BF009273FC /* Preview Assets.xcassets in Resources */,
+				77892FCA256B55BF009273FC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +517,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		77892FB6256B55BE009273FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77892FC4256B55BE009273FC /* NotificationController.swift in Sources */,
+				77892FC2256B55BE009273FC /* ContentView.swift in Sources */,
+				77892FC8256B55BE009273FC /* ComplicationController.swift in Sources */,
+				77892FC0256B55BE009273FC /* overdoneApp.swift in Sources */,
+				77892FC6256B55BE009273FC /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -360,6 +541,16 @@
 			isa = PBXTargetDependency;
 			target = 773A0A9B251C436700C05ED1 /* overdone */;
 			targetProxy = 773A0ABE251C436900C05ED1 /* PBXContainerItemProxy */;
+		};
+		77892FBD256B55BE009273FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77892FB9256B55BE009273FC /* overdoneWatch Extension */;
+			targetProxy = 77892FBC256B55BE009273FC /* PBXContainerItemProxy */;
+		};
+		77892FD1256B55BF009273FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77892FB0256B55BD009273FC /* overdoneWatch */;
+			targetProxy = 77892FD0256B55BF009273FC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -485,6 +676,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = overdone/overdone.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"overdone/Preview Content\"";
 				DEVELOPMENT_TEAM = X2JKSF7P44;
@@ -507,6 +699,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = overdone/overdone.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"overdone/Preview Content\"";
 				DEVELOPMENT_TEAM = X2JKSF7P44;
@@ -608,6 +801,94 @@
 			};
 			name = Release;
 		};
+		77892FD4256B55BF009273FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"overdoneWatch Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = X2JKSF7P44;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "overdoneWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aridokmecian.overdone.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Debug;
+		};
+		77892FD5256B55BF009273FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"overdoneWatch Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = X2JKSF7P44;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "overdoneWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aridokmecian.overdone.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Release;
+		};
+		77892FD8256B55BF009273FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X2JKSF7P44;
+				IBSC_MODULE = overdoneWatch_Extension;
+				INFOPLIST_FILE = overdoneWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aridokmecian.overdone.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Debug;
+		};
+		77892FD9256B55BF009273FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X2JKSF7P44;
+				IBSC_MODULE = overdoneWatch_Extension;
+				INFOPLIST_FILE = overdoneWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aridokmecian.overdone.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -643,6 +924,24 @@
 			buildConfigurations = (
 				773A0ACD251C436900C05ED1 /* Debug */,
 				773A0ACE251C436900C05ED1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77892FD3256B55BF009273FC /* Build configuration list for PBXNativeTarget "overdoneWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77892FD4256B55BF009273FC /* Debug */,
+				77892FD5256B55BF009273FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77892FD7256B55BF009273FC /* Build configuration list for PBXNativeTarget "overdoneWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77892FD8256B55BF009273FC /* Debug */,
+				77892FD9256B55BF009273FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
