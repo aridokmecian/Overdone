@@ -26,7 +26,7 @@ struct LocationSelectorView: View {
     var body: some View {
         VStack {
             HStack {
-                TextField("1 Infinite Loop California", text: $location.query)
+                TextField("1 Infinite Loop Cupertino, CA, United States", text: $location.query)
                     .padding()
                 Button(action: {
                     location.query = ""
