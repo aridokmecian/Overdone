@@ -69,7 +69,14 @@ struct ListView: View {
                     Button(action: {
                         self.showSheet = true
                     }) {
-                        Label("Add Item", systemImage: "plus")
+                        Label("Add Item", systemImage: "gearshape.fill")
+                    }
+                }
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: {
+                        self.showSheet = true
+                    }) {
+                        Label("Add Item", systemImage: "plus.circle.fill")
                     }
                 }
             }
