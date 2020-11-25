@@ -35,6 +35,7 @@
 		77893028256B7047009273FC /* LocationObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77893027256B7047009273FC /* LocationObservable.swift */; };
 		7789303B256B7DA5009273FC /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7789303A256B7DA5009273FC /* MapViewModel.swift */; };
 		77AD9012251D8F0C0028A26A /* overdoneModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 77AD9010251D8F0C0028A26A /* overdoneModel.xcdatamodeld */; };
+		77BBDBD0256E2EF4005EDB91 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BBDBCF256E2EF4005EDB91 /* SettingsView.swift */; };
 		77F31CF425213179007801BB /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F31CF325213179007801BB /* EntryView.swift */; };
 		77F31D1B25214177007801BB /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F31D1A25214177007801BB /* DetailView.swift */; };
 /* End PBXBuildFile section */
@@ -134,6 +135,7 @@
 		77893027256B7047009273FC /* LocationObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationObservable.swift; sourceTree = "<group>"; };
 		7789303A256B7DA5009273FC /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		77AD9011251D8F0C0028A26A /* overdoneModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = overdoneModel.xcdatamodel; sourceTree = "<group>"; };
+		77BBDBCF256E2EF4005EDB91 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		77F31CF325213179007801BB /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
 		77F31D1A25214177007801BB /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -316,6 +318,7 @@
 				773A679D253E865A002B0FEE /* ListEntryView.swift */,
 				773C0E0E25678523008A2529 /* ListView.swift */,
 				7789301F256B6FAB009273FC /* LocationSelectorView.swift */,
+				77BBDBCF256E2EF4005EDB91 /* SettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -515,6 +518,7 @@
 				773C0E0F25678523008A2529 /* ListView.swift in Sources */,
 				773A0AA9251C436800C05ED1 /* Persistence.swift in Sources */,
 				773A0AA2251C436700C05ED1 /* ContentView.swift in Sources */,
+				77BBDBD0256E2EF4005EDB91 /* SettingsView.swift in Sources */,
 				77F31D1B25214177007801BB /* DetailView.swift in Sources */,
 				7766815C25203D0E000454AD /* DrilldownView.swift in Sources */,
 				7789303B256B7DA5009273FC /* MapViewModel.swift in Sources */,
