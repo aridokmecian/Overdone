@@ -61,18 +61,32 @@ struct ListView: View {
                 Spacer()
                 Group {
                     if (entries.isEmpty) {
-                        VStack(spacing: 16) {
-                            Image("box")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 100)
-                            Text("You have no tasks today! Take it easy!")
+                        
                             Button(action: {
                                 self.showNewTodoSheet = true
                             }, label: {
-                                Text("Add a task!")
+                                VStack(spacing: -30) {
+                                    
+                                    ZStack {
+                                        RoundedRectangle(cornerSize: CGSize(width: 20, height: 20))
+                                            .fill()
+                                            .frame(width: 320, height: 300, alignment: .center)
+                                            .padding(.all, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                                                .shadow(radius: 10)
+                                        VStack {
+                                            Text("Add a task!")
+                                                .font(.title)
+                                                .foregroundColor(.white)
+                                                .bold()
+                                            Image("box")
+                                                .resizable()
+                                                .aspectRatio(contentMode: .fit)
+                                        }
+                                        .frame(width: 300, height: 300, alignment: .center)
+                                    }
+                                }
                             })
-                        }
+                        
                     } else {
                         ScrollView {
                             Picker("Priority", selection: $selection) {
@@ -85,7 +99,7 @@ struct ListView: View {
                             }.pickerStyle(SegmentedPickerStyle())
                             .padding()
                             LazyVStack(alignment: .center, pinnedViews: [.sectionFooters]) {
-                                Section(footer: FloatingButtonView(action: {self.showNewTodoSheet = true}).padding()) {
+                                Section(footer: FloatingButtonView(action: {self.showNewTodoSheet = true})) {
                                     
                                     ForEach(entries) { entry in
                                         ListEntry(entry: entry)
@@ -104,6 +118,9 @@ struct ListView: View {
 
 struct ListView_Previews: PreviewProvider {
     static var previews: some View {
-        ListView()
+        Group {
+            ListView()
+        }
+            
     }
 }

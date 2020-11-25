@@ -1,6 +1,7 @@
 {
   "images" : [
     {
+      "filename" : "icons8-empty-box-96.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -9,7 +10,6 @@
       "scale" : "2x"
     },
     {
-      "filename" : "undraw_Selection_re_poer.svg",
       "idiom" : "universal",
       "scale" : "3x"
     }
