@@ -31,7 +31,7 @@ struct FloatingButtonView: View {
                             }
                             
                         }
-                        .frame(width: 60, height: 60)
+                        .frame(width: 260, height: 70)
                     })
                 }
             }
