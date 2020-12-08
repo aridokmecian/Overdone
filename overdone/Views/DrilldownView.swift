@@ -9,57 +9,76 @@ import SwiftUI
 import CoreData
 
 struct DrilldownView: View {
+    
     @Environment(\.managedObjectContext) private var viewContext
-    @Environment(\.editMode) var editMode
+//    init(entry: TodoEntry) {
+//        _entry = .init(<#T##base: Binding<V>##Binding<V>#>)
+//        _text = .init(initialValue: entry.text ?? "")
+//        _repeating = .init(initialValue: entry.repeating)
+//        _isDueDate = .init(initialValue: entry.dueDate != nil)
+//        _dueDate = .init(initialValue: entry.dueDate ?? Date())
+//        _isLocation = .init(initialValue: entry.location != nil)
+//        _location = .init(initialValue: entry.location ?? "")
+//    }
     
-    init(entry: TodoEntry) {
-        _entry = .init(initialValue: entry)
-        _text = .init(initialValue: entry.text ?? "")
-        _repeating = .init(initialValue: entry.repeating)
-        _isDueDate = .init(initialValue: entry.dueDate != nil)
-        _dueDate = .init(initialValue: entry.dueDate ?? Date())
-        _isLocation = .init(initialValue: entry.location != nil)
-        _location = .init(initialValue: entry.location ?? "")
-    }
+    @Binding var entry: TodoEntry
 
-    @State private var text: String
-    @State private var repeating: Bool
-    @State private var isDueDate: Bool
-    @State private var dueDate: Date
-    @State private var isLocation: Bool
-    @State private var location: String
-    @State private var entry: TodoEntry
+    @State private var text: String = ""
+    @State private var repeating: Bool = false
+    @State private var isDueDate: Bool = false
+    @State private var dueDate: Date = Date()
+    @State private var isLocation: Bool = false
+    @State private var location: String = ""
     
-    var isEdited: Bool {
-        self.editMode?.wrappedValue.isEditing ?? false
-    }
+    
+    @State private var showEditSheet = false
     
     var body: some View {
-        VStack {
-            if (isEdited) {
-                EntryView(text: $text, repeating: $repeating, isDueDate: $isDueDate, dueDate: $dueDate, isLocation: $isLocation, location: $location)
-                    .environment(\.managedObjectContext, viewContext)
-            } else {
-                DetailView(entry: $entry)
-            }
+        Group {
+            DetailView(entry: $entry)
         }
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
-                Button(action: {
-                    if (isEdited) {
-                        updateEntry(entry: entry)
-                        editMode?.wrappedValue = EditMode.inactive
-                    } else {
-                        editMode?.wrappedValue = EditMode.active
+               Button(action: {
+                    self.showEditSheet = true
+                }) {
+                    Text("Edit")
+                }
+                .padding()
+                .font(.title)
+                .sheet(isPresented: $showEditSheet) {
+                    NavigationView {
+                        EntryView(text: $text, repeating: $repeating, isDueDate: $isDueDate, dueDate: $dueDate, isLocation: $isLocation, location: $location)
+                            .environment(\.managedObjectContext, viewContext)
+                            .navigationBarTitle(Text("Update Todo"), displayMode: .inline)
+                            .toolbar {
+                                ToolbarItem(placement: .navigationBarTrailing) {
+                                    Button(action: {
+                                        updateEntry()
+                                        self.showEditSheet = false
+                                    }, label: {
+                                        Text("Save").font(.title).bold()
+                                    })
+                                }
+                            }
                     }
-                }, label: {
-                    Text( isEdited ? "Save" : "Edit")
-                })
+                    
+                }
             }
         }
+        .onAppear {
+            text = entry.text ?? ""
+            repeating = entry.repeating
+            isDueDate = entry.dueDate != nil
+            dueDate = entry.dueDate ?? Date()
+            isLocation = entry.location != nil
+            location = entry.location ?? ""
+            
+        }
     }
+    
                 
-    func updateEntry(entry: TodoEntry) {
+    func updateEntry() {
         entry.text = text
         entry.repeating = repeating
         entry.dueDate = (isDueDate) ? dueDate : nil
@@ -81,6 +100,6 @@ struct DrilldownView_Previews: PreviewProvider {
     
     static var previews: some View {
         let store = PersistenceController.preview
-        return DrilldownView(entry: TodoEntry(context: store.container.viewContext, text: "Name"))
+        return DrilldownView(entry: .constant(TodoEntry(context: store.container.viewContext, text: "Hello World")))
     }
 }
