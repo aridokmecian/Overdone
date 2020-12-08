@@ -49,7 +49,7 @@ struct ListEntry: View {
             }
             GroupBox(
                 label: HStack {
-                    Text(entry.text!).padding(.trailing, 4)
+                    Text(entry.text ?? "").padding(.trailing, 4)
                     Spacer()
                     Image(systemName: "chevron.right").foregroundColor(Color(.systemGray4)).imageScale(.small)
                 }
