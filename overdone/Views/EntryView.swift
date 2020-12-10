@@ -43,14 +43,14 @@ struct EntryView: View {
             
             Section(header: Text("Location")) {
                 Toggle(isOn: $isLocation.animation()) {
-                    Text("Location")
+                    Text("Location \(isLocation.description)")
+                    
                 }
-                
                 if (isLocation) {
                     NavigationLink(
                         destination: LocationSelectorView(result: $location),
                         label: {
-                            Text(location.isEmpty ? "Click to add location" : location)
+                            Text(location.isEmpty ? "Click to add location \(isLocation.description)" : location)
                         })
                 }
             }

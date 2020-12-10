@@ -20,7 +20,8 @@ struct ListEntry: View {
     // Main view of function
     var body: some View {
         NavigationLink(
-            destination: DrilldownView(entry: entry),
+            destination: DrilldownView(entry: $entry)
+                .environment(\.managedObjectContext, viewContext),
             label: {
                 boxEntry
             })
