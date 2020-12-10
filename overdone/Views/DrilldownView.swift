@@ -11,15 +11,7 @@ import CoreData
 struct DrilldownView: View {
     
     @Environment(\.managedObjectContext) private var viewContext
-//    init(entry: TodoEntry) {
-//        _entry = .init(<#T##base: Binding<V>##Binding<V>#>)
-//        _text = .init(initialValue: entry.text ?? "")
-//        _repeating = .init(initialValue: entry.repeating)
-//        _isDueDate = .init(initialValue: entry.dueDate != nil)
-//        _dueDate = .init(initialValue: entry.dueDate ?? Date())
-//        _isLocation = .init(initialValue: entry.location != nil)
-//        _location = .init(initialValue: entry.location ?? "")
-//    }
+
     
     @Binding var entry: TodoEntry
 
@@ -30,12 +22,11 @@ struct DrilldownView: View {
     @State private var isLocation: Bool = false
     @State private var location: String = ""
     
-    
     @State private var showEditSheet = false
     
     var body: some View {
         Group {
-            DetailView(entry: $entry)
+            DetailView(text: $text, repeating: $repeating, isDueDate: $isDueDate, dueDate: $dueDate, isLocation: $isLocation, location: $location)
         }
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
@@ -55,7 +46,7 @@ struct DrilldownView: View {
                                 ToolbarItem(placement: .navigationBarTrailing) {
                                     Button(action: {
                                         updateEntry()
-                                        self.showEditSheet = false
+                                        self.showEditSheet.toggle()
                                     }, label: {
                                         Text("Save").font(.title).bold()
                                     })
@@ -92,6 +83,12 @@ struct DrilldownView: View {
         catch {
             fatalError("resolve before shipping app")
         }
+    }
+    
+    func getDate(date: Date) -> String {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .full
+        return formatter.string(from: date)
     }
 }
 
