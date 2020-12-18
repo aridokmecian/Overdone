@@ -19,9 +19,9 @@
 </p>
 <hr>
 
+<p align="center">
 A simple iOS app designed to track a users everyday todo's!
 
-<br>
 
 # Usage
 
@@ -33,3 +33,28 @@ Simply open project and run on desired target!
 If you have any suggestions on how this application can be improves feel free to at me [@aridokmecian](http://twitter.com/aridokmecian) !
 
 # Gallery
+<p align="center">
+  <a href="" target="_blank">
+      <img style="width:500px; height1024:px;" alt="Default Screen" src="./ReadMeImages/Default.png">
+  </a>
+
+  <a href="" target="_blank">
+      <img style="width:500px; height1024:px;" alt="Task Entry" src="./ReadMeImages/TaskEntry.png">
+  </a>
+
+  <a href="" target="_blank">
+      <img style="width:500px; height1024:px;" alt="Location Entry" src="./ReadMeImages/LocationEntry.png">
+  </a>
+
+  <a href="" target="_blank">
+      <img style="width:500px; height1024:px;" alt="One Task in List" src="./ReadMeImages/OneTask.png">
+  </a>
+
+  <a href="" target="_blank">
+      <img style="width:500px; height1024:px;" alt="DrillDown View" src="./ReadMeImages/DrillDownView.png">
+  </a>
+
+  <a href="" target="_blank">
+      <img style="width:500px; height1024:px;" alt="Task Edit" src="./ReadMeImages/TaskEdit.png">
+  </a>
+</p>
