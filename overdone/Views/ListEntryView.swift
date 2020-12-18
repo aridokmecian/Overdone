@@ -63,7 +63,6 @@ struct ListEntry: View {
                             Text("-")
                             Text(entry.dueDate!, style: .time)
                         }
-                        
                         Spacer()
                     }
                 }
