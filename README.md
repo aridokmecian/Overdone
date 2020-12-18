@@ -33,28 +33,29 @@ Simply open project and run on desired target!
 If you have any suggestions on how this application can be improves feel free to at me [@aridokmecian](http://twitter.com/aridokmecian) !
 
 # Gallery
+
 <p align="center">
   <a href="" target="_blank">
-      <img style="width:325px; height:574px; padding: 10px" alt="Default Screen" src="./ReadMeImages/Default.png">
+      <img style="padding: 10px" alt="Default Screen" src="./ReadMeImages/Default.png" width="325px" height="574px">
   </a>
 
   <a href="" target="_blank">
-      <img style="width:325px; height:574px; padding: 10px" alt="Task Entry" src="./ReadMeImages/TaskEntry.png">
+      <img style="padding: 10px" alt="Task Entry" src="./ReadMeImages/TaskEntry.png" width="325px" height="574px">
   </a>
 
   <a href="" target="_blank">
-      <img style="width:325px; height:574px; padding: 10px" alt="Location Entry" src="./ReadMeImages/LocationEntry.png">
+      <img style="padding: 10px" alt="Location Entry" src="./ReadMeImages/LocationEntry.png" width="325px" height="574px">
   </a>
 
   <a href="" target="_blank">
-      <img style="width:325px; height:574px; padding: 10px" alt="One Task in List" src="./ReadMeImages/OneTask.png">
+      <img style="padding: 10px" alt="One Task in List" src="./ReadMeImages/OneTask.png" width="325px" height="574px">
   </a>
 
   <a href="" target="_blank">
-      <img style="width:325px; height:574px; padding: 10px" alt="DrillDown View" src="./ReadMeImages/DrillDownView.png">
+      <img style="padding: 10px" alt="DrillDown View" src="./ReadMeImages/DrillDownView.png" width="325px" height="574px">
   </a>
 
   <a href="" target="_blank">
-      <img style="width:325px; height:574px; padding: 10px" alt="Task Edit" src="./ReadMeImages/TaskEdit.png">
+      <img style="padding: 10px" alt="Task Edit" src="./ReadMeImages/TaskEdit.png" width="325px" height="574px">
   </a>
 </p>
