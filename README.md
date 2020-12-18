@@ -36,26 +36,26 @@ If you have any suggestions on how this application can be improves feel free to
 
 <p align="center">
   <a href="" target="_blank">
-      <img style="padding: 10px" alt="Default Screen" src="./ReadMeImages/Default.png" width="325px" height="574px">
+      <img alt="Default Screen" src="./ReadMeImages/Default.png" width="325px" height="574px">
   </a>
 
   <a href="" target="_blank">
-      <img style="padding: 10px" alt="Task Entry" src="./ReadMeImages/TaskEntry.png" width="325px" height="574px">
+      <img alt="Task Entry" src="./ReadMeImages/TaskEntry.png" width="325px" height="574px">
   </a>
 
   <a href="" target="_blank">
-      <img style="padding: 10px" alt="Location Entry" src="./ReadMeImages/LocationEntry.png" width="325px" height="574px">
+      <img alt="Location Entry" src="./ReadMeImages/LocationEntry.png" width="325px" height="574px">
   </a>
 
   <a href="" target="_blank">
-      <img style="padding: 10px" alt="One Task in List" src="./ReadMeImages/OneTask.png" width="325px" height="574px">
+      <img alt="One Task in List" src="./ReadMeImages/OneTask.png" width="325px" height="574px">
   </a>
 
   <a href="" target="_blank">
-      <img style="padding: 10px" alt="DrillDown View" src="./ReadMeImages/DrillDownView.png" width="325px" height="574px">
+      <img alt="DrillDown View" src="./ReadMeImages/DrillDownView.png" width="325px" height="574px">
   </a>
 
   <a href="" target="_blank">
-      <img style="padding: 10px" alt="Task Edit" src="./ReadMeImages/TaskEdit.png" width="325px" height="574px">
+      <img alt="Task Edit" src="./ReadMeImages/TaskEdit.png" width="325px" height="574px">
   </a>
 </p>
