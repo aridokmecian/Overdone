@@ -50,15 +50,22 @@ struct ListEntry: View {
             }
             GroupBox(
                 label: HStack {
-                    Text(entry.text ?? "").padding(.trailing, 4)
+                    Text(entry.text ?? "").padding(.trailing, 4).lineLimit(entry.dueDate != nil ? 1 : 2)
                     Spacer()
                     Image(systemName: "chevron.right").foregroundColor(Color(.systemGray4)).imageScale(.small)
                 }
                 .foregroundColor(.blue)
             ) {
                 HStack {
-                    Text(entry.dueDate?.description ?? "No Due Date")
-                    Spacer()
+                    if (entry.dueDate != nil) {
+                        HStack {
+                            Text(entry.dueDate!, style: .date)
+                            Text("-")
+                            Text(entry.dueDate!, style: .time)
+                        }
+                        
+                        Spacer()
+                    }
                 }
             }
             .foregroundColor(.gray)
