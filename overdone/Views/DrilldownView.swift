@@ -76,7 +76,7 @@ struct DrilldownView: View {
         entry.dueDate = (isDueDate) ? dueDate : nil
         entry.location = (isLocation) ? location : nil
         entry.id = UUID()
-        entry.image = image?.pngData()
+        entry.image = image?.jpegData(compressionQuality: 1.0)
         do {
             try withAnimation {
                 try viewContext.save()

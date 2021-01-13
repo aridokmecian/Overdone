@@ -64,7 +64,7 @@ struct EntryView: View {
     
                 if self.image != nil {
                     Image(uiImage: self.image!).resizable()
-                        .frame(width: 299, height: 299)
+                        .frame(width: 300, height: 300)
                         .shadow(radius: 10)
                     Button(action: {self.image = nil}) {
                         Text("Remove Image")
