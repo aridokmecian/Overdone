@@ -19,6 +19,7 @@
 		77552EED251D848900C3F46F /* NewTodoPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77552EEC251D848900C3F46F /* NewTodoPageView.swift */; };
 		77593D692521A69900B3D2E9 /* FloatingButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77593D682521A69900B3D2E9 /* FloatingButtonView.swift */; };
 		7766815C25203D0E000454AD /* DrilldownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7766815B25203D0E000454AD /* DrilldownView.swift */; };
+		7773789425AEAC310061CD92 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7773789325AEAC310061CD92 /* ImagePicker.swift */; };
 		7784E070256247CE000B97FC /* TodoEntry+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7784E06E256247CE000B97FC /* TodoEntry+CoreDataClass.swift */; };
 		7784E071256247CE000B97FC /* TodoEntry+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7784E06F256247CE000B97FC /* TodoEntry+CoreDataProperties.swift */; };
 		77892FB4256B55BE009273FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77892FB3256B55BE009273FC /* Assets.xcassets */; };
@@ -115,6 +116,7 @@
 		77552EEC251D848900C3F46F /* NewTodoPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTodoPageView.swift; sourceTree = "<group>"; };
 		77593D682521A69900B3D2E9 /* FloatingButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingButtonView.swift; sourceTree = "<group>"; };
 		7766815B25203D0E000454AD /* DrilldownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrilldownView.swift; sourceTree = "<group>"; };
+		7773789325AEAC310061CD92 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		7784E06E256247CE000B97FC /* TodoEntry+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TodoEntry+CoreDataClass.swift"; sourceTree = "<group>"; };
 		7784E06F256247CE000B97FC /* TodoEntry+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TodoEntry+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		77892FB1256B55BD009273FC /* overdoneWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = overdoneWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -309,6 +311,7 @@
 		77F31D25252147CA007801BB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7773789325AEAC310061CD92 /* ImagePicker.swift */,
 				77552EEC251D848900C3F46F /* NewTodoPageView.swift */,
 				7766815B25203D0E000454AD /* DrilldownView.swift */,
 				77F31D1A25214177007801BB /* DetailView.swift */,
@@ -516,6 +519,7 @@
 				77893020256B6FAB009273FC /* LocationSelectorView.swift in Sources */,
 				7784E070256247CE000B97FC /* TodoEntry+CoreDataClass.swift in Sources */,
 				773C0E0F25678523008A2529 /* ListView.swift in Sources */,
+				7773789425AEAC310061CD92 /* ImagePicker.swift in Sources */,
 				773A0AA9251C436800C05ED1 /* Persistence.swift in Sources */,
 				773A0AA2251C436700C05ED1 /* ContentView.swift in Sources */,
 				77BBDBD0256E2EF4005EDB91 /* SettingsView.swift in Sources */,

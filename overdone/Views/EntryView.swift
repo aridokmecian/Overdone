@@ -19,6 +19,8 @@ struct EntryView: View {
     @Binding var location: String
     
     @State private var loc: MKLocalSearchCompletion?
+    @State private var showingImagePicker = false
+    @State private var inputImage: UIImage?
     
     var body: some View {
         Form {
@@ -54,7 +56,16 @@ struct EntryView: View {
                         })
                 }
             }
+            
+            Section(header: Text("Add a photo")) {
+                Button(action: {self.showingImagePicker.toggle()}) {
+                    Text("Select an image")
+                }
+            }
         }
+        .sheet(isPresented: $showingImagePicker, content: {
+            ImagePicker(image: self.$inputImage)
+        })
     }
 }
 
