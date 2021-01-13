@@ -21,6 +21,7 @@ extension TodoEntry {
     @NSManaged public var location: String?
     @NSManaged public var repeating: Bool
     @NSManaged public var text: String?
+    @NSManaged public var image: Data?
 
 }
 

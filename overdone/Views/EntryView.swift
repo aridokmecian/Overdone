@@ -17,10 +17,10 @@ struct EntryView: View {
     @Binding var dueDate: Date
     @Binding var isLocation: Bool
     @Binding var location: String
+    @Binding var image: UIImage?
     
     @State private var loc: MKLocalSearchCompletion?
     @State private var showingImagePicker = false
-    @State private var inputImage: UIImage?
     
     var body: some View {
         Form {
@@ -61,15 +61,15 @@ struct EntryView: View {
                 Button(action: {self.showingImagePicker.toggle()}) {
                     Text("Select an image")
                 }
-                if self.inputImage != nil {
-                    Image(uiImage: self.inputImage!).resizable()
-                                        .frame(width: 299, height: 299)
-                                        .shadow(radius: 10)
+                if self.image != nil {
+                    Image(uiImage: self.image!).resizable()
+                        .frame(width: 299, height: 299)
+                        .shadow(radius: 10)
                 }
             }
         }
         .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
-            ImagePicker(image: self.$inputImage)
+            ImagePicker(image: self.$image)
         }
     }
     
@@ -86,9 +86,10 @@ struct entryView_Previews: PreviewProvider {
     @State static var dueDate = Date()
     @State static var isLocation = true
     @State static var location = "at home"
+    @State static var image: UIImage? = nil
 
     
     static var previews: some View {
-        EntryView(text: $text, repeating: $repeating, isDueDate: $isDueDate, dueDate: $dueDate, isLocation: $isLocation, location: $location)
+        EntryView(text: $text, repeating: $repeating, isDueDate: $isDueDate, dueDate: $dueDate, isLocation: $isLocation, location: $location, image: $image)
     }
 }

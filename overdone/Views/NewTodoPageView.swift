@@ -17,10 +17,11 @@ struct NewTodoPage: View {
     @State private var dueDate = Date()
     @State private var isLocation = false
     @State private var location = ""
+    @State private var image: UIImage? = nil
     
     var body: some View {
         NavigationView {
-            EntryView(text: $text, repeating: $repeating, isDueDate: $isDueDate, dueDate: $dueDate, isLocation: $isLocation, location: $location)
+            EntryView(text: $text, repeating: $repeating, isDueDate: $isDueDate, dueDate: $dueDate, isLocation: $isLocation, location: $location, image: $image)
                 .environment(\.managedObjectContext, viewContext)
                 .navigationBarTitle(Text("New Todo"), displayMode: .inline)
                 .toolbar {
@@ -41,6 +42,7 @@ struct NewTodoPage: View {
         entry.dueDate = (isDueDate) ? dueDate : nil
         entry.location = (isLocation) ? location : nil
         entry.id = UUID()
+        entry.image = image?.pngData()
         
         do {
             try viewContext.save()

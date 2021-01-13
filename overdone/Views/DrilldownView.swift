@@ -21,12 +21,13 @@ struct DrilldownView: View {
     @State private var dueDate: Date = Date()
     @State private var isLocation: Bool = false
     @State private var location: String = ""
+    @State private var image: UIImage? = nil
     
     @State private var showEditSheet = false
     
     var body: some View {
         Group {
-            DetailView(text: $text, repeating: $repeating, isDueDate: $isDueDate, dueDate: $dueDate, isLocation: $isLocation, location: $location)
+            DetailView(text: $text, repeating: $repeating, isDueDate: $isDueDate, dueDate: $dueDate, isLocation: $isLocation, location: $location, image: $image)
         }
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
@@ -39,7 +40,7 @@ struct DrilldownView: View {
                 .font(.title)
                 .sheet(isPresented: $showEditSheet) {
                     NavigationView {
-                        EntryView(text: $text, repeating: $repeating, isDueDate: $isDueDate, dueDate: $dueDate, isLocation: $isLocation, location: $location)
+                        EntryView(text: $text, repeating: $repeating, isDueDate: $isDueDate, dueDate: $dueDate, isLocation: $isLocation, location: $location, image: $image)
                             .environment(\.managedObjectContext, viewContext)
                             .navigationBarTitle(Text("Update Todo"), displayMode: .inline)
                             .toolbar {
@@ -64,7 +65,7 @@ struct DrilldownView: View {
             dueDate = entry.dueDate ?? Date()
             isLocation = entry.location != nil
             location = entry.location ?? ""
-            
+            image = (entry.image != nil) ? UIImage(data: entry.image!) : nil
         }
     }
     
