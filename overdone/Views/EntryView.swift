@@ -59,12 +59,16 @@ struct EntryView: View {
             
             Section(header: Text("Add a photo")) {
                 Button(action: {self.showingImagePicker.toggle()}) {
-                    Text("Select an image")
+                    Text((self.image == nil) ? "Select an image" : "Change Image")
                 }
+    
                 if self.image != nil {
                     Image(uiImage: self.image!).resizable()
                         .frame(width: 299, height: 299)
                         .shadow(radius: 10)
+                    Button(action: {self.image = nil}) {
+                        Text("Remove Image")
+                    }
                 }
             }
         }
