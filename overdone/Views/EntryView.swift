@@ -61,11 +61,20 @@ struct EntryView: View {
                 Button(action: {self.showingImagePicker.toggle()}) {
                     Text("Select an image")
                 }
+                if self.inputImage != nil {
+                    Image(uiImage: self.inputImage!).resizable()
+                                        .frame(width: 299, height: 299)
+                                        .shadow(radius: 10)
+                }
             }
         }
-        .sheet(isPresented: $showingImagePicker, content: {
+        .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
             ImagePicker(image: self.$inputImage)
-        })
+        }
+    }
+    
+    func loadImage() {
+        // loadImage
     }
 }
 
