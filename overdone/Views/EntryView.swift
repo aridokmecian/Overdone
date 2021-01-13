@@ -17,8 +17,10 @@ struct EntryView: View {
     @Binding var dueDate: Date
     @Binding var isLocation: Bool
     @Binding var location: String
+    @Binding var image: UIImage?
     
     @State private var loc: MKLocalSearchCompletion?
+    @State private var showingImagePicker = false
     
     var body: some View {
         Form {
@@ -54,6 +56,33 @@ struct EntryView: View {
                         })
                 }
             }
+            
+            Section(header: Text("Add a photo")) {
+                Button(action: {self.showingImagePicker.toggle()}) {
+                    if self.image != nil {
+                        Image(uiImage: self.image!)
+                            .resizable()
+                            .scaledToFit()
+                            .padding()
+                            .shadow(radius: 10)
+                    } else {
+                        Text((self.image == nil) ? "Select an image" : "Change Image")
+                    }
+                }
+                
+                if self.image != nil {
+                    Button(action: {
+                        withAnimation{
+                            self.image = nil
+                        }
+                    }) {
+                        Text("Remove Image")
+                    }
+                }
+            }
+        }
+        .sheet(isPresented: $showingImagePicker) {
+            ImagePicker(image: self.$image)
         }
     }
 }
@@ -66,9 +95,10 @@ struct entryView_Previews: PreviewProvider {
     @State static var dueDate = Date()
     @State static var isLocation = true
     @State static var location = "at home"
+    @State static var image: UIImage? = nil
 
     
     static var previews: some View {
-        EntryView(text: $text, repeating: $repeating, isDueDate: $isDueDate, dueDate: $dueDate, isLocation: $isLocation, location: $location)
+        EntryView(text: $text, repeating: $repeating, isDueDate: $isDueDate, dueDate: $dueDate, isLocation: $isLocation, location: $location, image: $image)
     }
 }

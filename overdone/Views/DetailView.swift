@@ -15,6 +15,7 @@ struct DetailView: View {
     @Binding var dueDate: Date
     @Binding var isLocation: Bool
     @Binding var location: String
+    @Binding var image: UIImage?
     
     var body: some View {
         Form {
@@ -36,6 +37,16 @@ struct DetailView: View {
                     Text(location)
                 }
             }
+            
+            if (image != nil) {
+                Section(header: Text("Image")) {
+                    Image(uiImage: self.image!)
+                        .resizable()
+                        .scaledToFit()
+                        .padding()
+                        .shadow(radius: 10)
+                }
+            }
         }
         .navigationBarTitle("Details", displayMode: .inline)
     }
@@ -54,8 +65,9 @@ struct DisplayView_Previews: PreviewProvider {
     @State static var dueDate = Date()
     @State static var isLocation = true
     @State static var location = "at home"
+    @State static var image: UIImage? = nil
     
     static var previews: some View {
-        DetailView(text: $text, repeating: $repeating, isDueDate: $isDueDate, dueDate: $dueDate, isLocation: $isLocation, location: $location)
+        DetailView(text: $text, repeating: $repeating, isDueDate: $isDueDate, dueDate: $dueDate, isLocation: $isLocation, location: $location, image: $image)
     }
 }
