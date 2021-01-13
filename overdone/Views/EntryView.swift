@@ -59,26 +59,31 @@ struct EntryView: View {
             
             Section(header: Text("Add a photo")) {
                 Button(action: {self.showingImagePicker.toggle()}) {
-                    Text((self.image == nil) ? "Select an image" : "Change Image")
+                    if self.image != nil {
+                        Image(uiImage: self.image!)
+                            .resizable()
+                            .scaledToFit()
+                            .padding()
+                            .shadow(radius: 10)
+                    } else {
+                        Text((self.image == nil) ? "Select an image" : "Change Image")
+                    }
                 }
-    
+                
                 if self.image != nil {
-                    Image(uiImage: self.image!).resizable()
-                        .frame(width: 300, height: 300)
-                        .shadow(radius: 10)
-                    Button(action: {self.image = nil}) {
+                    Button(action: {
+                        withAnimation{
+                            self.image = nil
+                        }
+                    }) {
                         Text("Remove Image")
                     }
                 }
             }
         }
-        .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
+        .sheet(isPresented: $showingImagePicker) {
             ImagePicker(image: self.$image)
         }
-    }
-    
-    func loadImage() {
-        // loadImage
     }
 }
 

@@ -40,8 +40,10 @@ struct DetailView: View {
             
             if (image != nil) {
                 Section(header: Text("Image")) {
-                    Image(uiImage: self.image!).resizable()
-                        .frame(width: 299, height: 299)
+                    Image(uiImage: self.image!)
+                        .resizable()
+                        .scaledToFit()
+                        .padding()
                         .shadow(radius: 10)
                 }
             }
